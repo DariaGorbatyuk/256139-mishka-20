@@ -1,3 +1,22 @@
-body{
-
-}
+@import "variables";
+@import "mixins";
+@import "/blocks/advantages";
+@import "/blocks/card";
+@import "/blocks/contacts";
+@import "/blocks/copyright";
+@import "/blocks/form-order";
+@import "/blocks/form-size";
+@import "/blocks/main-header";
+@import "/blocks/main-nav";
+@import "/blocks/modal-order";
+@import "/blocks/page";
+@import "/blocks/page-footer";
+@import "/blocks/page-header";
+@import "/blocks/page-main";
+@import "/blocks/process";
+@import "/blocks/products";
+@import "/blocks/reviews";
+@import "/blocks/site-list";
+@import "/blocks/socials";
+@import "/blocks/video";
+@import "/blocks/week-product";
