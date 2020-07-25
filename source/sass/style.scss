@@ -1,5 +1,10 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 @import "variables";
 @import "mixins";
+@import "fonts";
+@import "blocks/visually-hidden";
 @import "/blocks/advantages";
 @import "/blocks/card";
 @import "/blocks/contacts";
@@ -20,3 +25,5 @@
 @import "/blocks/socials";
 @import "/blocks/video";
 @import "/blocks/week-product";
+
+
