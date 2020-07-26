@@ -1,0 +1,37 @@
+.reviews__heading{
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $basic-black;
+}
+.reviews__list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.reviews__text{
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: $text;
+}
+.reviews__author{
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $basic-black;
+  font-style: normal;
+}
+.reviews__email{
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  color: $text;
+}
+.reviews__slider-btns{
+  width: 100%;
+}
+.reviews__slider-btn{
+  border: 1px solid $shadow-header;
+  width: 49.8%;
+}
