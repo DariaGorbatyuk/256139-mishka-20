@@ -1,6 +1,4 @@
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+@import "general";
 @import "variables";
 @import "mixins";
 @import "fonts";
@@ -8,9 +6,7 @@
 @import "blocks/button";
 @import "blocks/page";
 @import "blocks/page-header";
-@import "blocks/main-nav";
 @import "blocks/site-list";
-
 @import "blocks/page-main";
 @import "blocks/main-header";
 @import "blocks/categories-list";
@@ -18,19 +14,12 @@
 @import "blocks/advantages";
 @import "blocks/reviews";
 @import "blocks/contacts";
-
-@import "blocks/page-footer";
 @import "blocks/socials";
 @import "blocks/copyright";
-
 @import "blocks/modal-order";
 @import "blocks/form-size";
-
 @import "blocks/card";
 @import "blocks/form-order";
 @import "blocks/process";
 @import "blocks/products";
 @import "blocks/video";
-
-
-

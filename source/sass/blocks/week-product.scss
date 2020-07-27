@@ -1,14 +1,16 @@
-.week-product{
+.week-product {
   background-color: inherit;
 }
-.week-product__heading{
+
+.week-product__heading {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: $basic-black;
   margin: 0;
 }
-.week-product__tag{
+
+.week-product__tag {
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
@@ -16,26 +18,30 @@
   margin: 0;
   text-transform: uppercase;
 }
-.week-product__text{
+
+.week-product__text {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
   color: $text;
 }
-.week-product__descriptions{
+
+.week-product__descriptions {
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
   color: $text;
 }
-.week-product__description-wrapper{
+
+.week-product__description-wrapper {
   border-bottom: 1px solid $shadow-header;
 }
 
-.week-product__description-value{
+.week-product__description-value {
   margin: 0;
 }
-.week-product__price{
+
+.week-product__price {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;

@@ -1,37 +1,47 @@
-.reviews__heading{
+.reviews__heading {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: $basic-black;
 }
-.reviews__list{
+
+.reviews__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.reviews__text{
+
+.reviews__blockquote {
+  margin: 0;
+}
+
+.reviews__text {
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
   color: $text;
 }
-.reviews__author{
+
+.reviews__author {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $basic-black;
   font-style: normal;
 }
-.reviews__email{
+
+.reviews__email {
   font-weight: normal;
   font-size: 17px;
   line-height: 30px;
   color: $text;
 }
-.reviews__slider-btns{
+
+.reviews__slider-btns {
   width: 100%;
 }
-.reviews__slider-btn{
+
+.reviews__slider-btn {
   border: 1px solid $shadow-header;
-  width: 49.8%;
+  width: 49%;
 }

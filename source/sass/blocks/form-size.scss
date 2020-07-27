@@ -1,30 +1,32 @@
-.form-size__fieldset{
+.form-size__fieldset {
   border: 0;
   padding: 0;
 }
-.form-size__legend{
+
+.form-size__legend {
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
   color: $text;
 }
 
-.form-size__size-list{
+.form-size__size-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .form-size__control {
-  & +.form-size__label{
+  & + .form-size__label {
     border: 2px solid rgba($text, 0.1);
   }
-  &--active + .form-size__label{
+
+  &--active + .form-size__label {
     border: 2px solid $turquoise;
   }
-
 }
-.form-size__btn{
+
+.form-size__btn {
   width: 100%;
   font-weight: bold;
   font-size: 17px;

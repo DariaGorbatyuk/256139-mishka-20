@@ -1,25 +1,30 @@
-.card__img{
+.card__img {
   display: block;
 }
-.card__info-wrapper{
+
+.card__info-wrapper {
   border: 1px solid $shadow-header;
 }
-.card__link-heading{
+
+.card__link-heading {
   text-decoration: none;
 }
-.card__heading{
+
+.card__heading {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $basic-black;
 }
-.card__parameters{
+
+.card__parameters {
   font-weight: normal;
   font-size: 13px;
   line-height: 30px;
   color: $text;
 }
-.card__price{
+
+.card__price {
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;

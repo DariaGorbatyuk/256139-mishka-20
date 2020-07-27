@@ -1,9 +1,10 @@
-.modal-order{
+.modal-order {
   display: none;
   border-top: 1px solid $gray-line;
   box-shadow: 0 5px 10px rgba($modal-shadow, 0.25);
 }
-.modal-order__heading{
+
+.modal-order__heading {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;

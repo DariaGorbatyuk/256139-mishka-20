@@ -1,18 +1,21 @@
-.contacts__heading{
+.contacts__heading {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
 }
-.contacts__data{
+
+.contacts__data {
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
   color: $text;
 }
-.contacts__value{
+
+.contacts__value {
   margin: 0;
 }
-.contacts__value-email{
+
+.contacts__value-email {
   color: $text;
   text-decoration: none;
   box-shadow: 0 1px 0 0 $turquoise-darker;
