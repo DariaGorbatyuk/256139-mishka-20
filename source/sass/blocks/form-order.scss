@@ -1,0 +1,52 @@
+.form-order__fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.form-order__legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $turquoise;
+}
+
+.form-order__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form-order__label {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: $basic-black;
+}
+
+.form-order__control {
+  ::placeholder{
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba($basic-black, 0.3);
+  }
+  &--text{
+    border: 0;
+    box-shadow: inset 0px -2px 0px $basic-black;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 18px;
+    color: $text;
+  }
+  &--textarea{
+    border: 2px solid $text;
+    box-shadow: none;
+
+  }
+}
+.form-order__small{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text;
+}

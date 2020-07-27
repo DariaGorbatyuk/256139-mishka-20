@@ -1,5 +1,6 @@
 .visually-hidden ,
-input[type="radio"]{
+input[type="radio"],
+input[type="checkbox"]{
   position: absolute;
   width: 1px;
   height: 1px;
