@@ -1,0 +1,15 @@
+.page {
+  box-sizing: border-box;
+}
+
+.page__body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: $font;
+  font-weight: normal;
+  color: $text;
+  font-size: 15px;
+  line-height: 24px;
+  background-color: $basic-white;
+  width: 320px;
+}

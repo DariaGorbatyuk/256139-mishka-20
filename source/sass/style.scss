@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+@import "general";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "blocks/visually-hidden";
+@import "blocks/button";
+@import "blocks/page";
+@import "blocks/page-header";
+@import "blocks/site-list";
+@import "blocks/page-main";
+@import "blocks/main-header";
+@import "blocks/categories-list";
+@import "blocks/week-product";
+@import "blocks/advantages";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/socials";
+@import "blocks/copyright";
+@import "blocks/modal-order";
+@import "blocks/form-size";
+@import "blocks/card";
+@import "blocks/form-order";
+@import "blocks/process";
+@import "blocks/products";
+@import "blocks/video";
