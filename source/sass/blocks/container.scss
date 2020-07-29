@@ -9,7 +9,7 @@
     padding: 50px;
   }
   @media (min-width: $large-width){
-    width: auto;
+    width: $large-width;
     padding: 50px;
   }
 }

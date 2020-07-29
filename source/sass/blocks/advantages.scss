@@ -1,14 +1,41 @@
+.advantages{
+  display: grid;
+  grid-template-columns:  1fr 5fr;
+}
 .advantages__heading {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: $basic-black;
+  @media (min-width: $medium-width) {
+    font-size: 43px;
+    line-height: 50px;
+    grid-column: 1/-1;
+  }
+  @media (min-width: $large-width) {
+    font-size: 53px;
+    line-height: 57px;
+    grid-column: 2/-1;
+  }
 }
 
 .advantages__list {
+  grid-column: 1/-1;
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  @media (min-width: $medium-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    grid-auto-flow: column;
+    justify-items: start;
+  }
+  @media (min-width: $large-width) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    grid-auto-flow: column;
+  }
 }
 
 .advantages__item {
@@ -16,4 +43,22 @@
   font-size: 17px;
   line-height: 20px;
   color: $basic-black;
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  @media (min-width: $large-width) {
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}n) {
+        grid-column: 2/ span 2;
+      }
+    }
+    @for $i from 4 through 6 {
+      &:nth-child(#{$i}n) {
+        grid-column: 4/ span 2;
+      }
+    }
+
+
+  }
 }
