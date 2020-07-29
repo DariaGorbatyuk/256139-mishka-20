@@ -2,10 +2,32 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
+  display: block;
+  margin-top: 120px;
+
+  @media (min-width: $medium-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 370px;
+    padding: 0 50px;
+  }
 }
 
 .categories-list__item {
   background-color: $turquoise;
+  flex-basis: 100%;
+  max-width: 100%;
+  padding-top: 24px;
+  padding-left: 30px;
+  padding-bottom: 31px;
+
+  @media (min-width: $medium-width) {
+    flex-basis: 50%;
+    max-width: 50%;
+    padding-left: 36px;
+    padding-bottom: 34px;
+  }
 
   &--darker {
     background-color: $turquoise-darker;

@@ -1,0 +1,15 @@
+.container {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $medium-width){
+    width: $medium-width;
+    padding: 50px;
+  }
+  @media (min-width: $large-width){
+    width: $large-width;
+    padding: 50px;
+  }
+}

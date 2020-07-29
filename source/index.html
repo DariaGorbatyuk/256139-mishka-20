@@ -2,140 +2,145 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page__body">
-<header class="page-header">
-  <a class="page-header__logo">
-    <img alt="Магазин Мишка" class="page-header__logo-img" height="35" src="http://placekitten.com/86/35" width="86">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item">
-        <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-      </li>
-      <li class="site-list__item">
-        <a class="site-list__link" href="form.html">Вязание на заказ</a>
-      </li>
-      <li class="site-list__item">
-        <a class="site-list__link" href="#">Поиск по сайту</a>
-      </li>
-      <li class="site-list__item">
-        <a class="site-list__link" href="#">Корзина: пока пуста</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main class="page-main">
-  <header class="main-header">
-    <h1 class="main-header__heading">Милые штуки ручной работы для дома</h1>
-    <ul class="main-header__list categories-list">
-      <li class="categories-list__item">
-        <a class="categories-list__link" href="#">Предметы интерьера</a>
-      </li>
-      <li class="categories-list__item categories-list__item--darker">
-        <a class="categories-list__link" href="#">Детские игрушки</a>
-      </li>
-    </ul>
-  </header>
-  <section class="week-product">
-    <h2 class="week-product__heading">Вязаные корзинки</h2>
-    <p class="week-product__tag">Товар недели</p>
-    <p class="week-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-      размерах.</p>
-    <dl class="week-product__descriptions">
-      <div class="week-product__description-wrapper">
-        <dt class="week-product__description-term">Цвет:</dt>
-        <dd class="week-product__description-value">«Тиффани»/серый</dd>
-      </div>
-      <div class="week-product__description-wrapper">
-        <dt class="week-product__description-term">Диаметр:</dt>
-        <dd class="week-product__description-value">25 см</dd>
-      </div>
-      <div class="week-product__description-wrapper">
-        <dt class="week-product__description-term">Высота:</dt>
-        <dd class="week-product__description-value">15 см</dd>
-      </div>
-    </dl>
-    <img alt="Вязаные корзинки" class="week-product__img" height="315" src="http://placekitten.com/260/315" width="260">
-    <p class="week-product__price">Цена: 990 руб.</p>
-    <a class="week-product__btn button" href="#">Заказать</a>
-  </section>
-  <section class="advantages">
-    <h2 class="advantages__heading">Коротко о нас:</h2>
-    <ul class="advantages__list">
-      <li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
-      <li class="advantages__item advantages__item--price">Скандинавский стиль по российской цене</li>
-      <li class="advantages__item advantages__item--like">Увеличивает лайки на фотографиях</li>
-      <li class="advantages__item advantages__item--knit">Связано вручную с любовью и умилением</li>
-      <li class="advantages__item advantages__item--support">Поддержка отечественного производителя</li>
-      <li class="advantages__item advantages__item--present">Поставляется в подарочной упаковке</li>
-    </ul>
-  </section>
-  <section class="reviews">
-    <h2 class="reviews__heading">Отзывы</h2>
-    <ul class="reviews__list">
-      <li class="reviews__item">
-        <blockquote class="reviews__blockquote">
-          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-            лайков, как у
-            популярных инстамамочек. В отчаянии, я накупила аксессуаров
-            и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-            больше лайков!
-          </p>
-          <cite class="reviews__author">Анастасия Красильникова<span class="reviews__email">@misssssiskras</span></cite>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="reviews__slider-btns">
-      <button class="reviews__slider-btn reviews__slider-btn--previous" type="button">
-        <span class="visually-hidden">Предыдущий отзыв</span>
-      </button>
-      <button class="reviews__slider-btn reviews__slider-btn--next" type="button">
-        <span class="visually-hidden">Следующий отзыв</span>
-      </button>
-    </div>
-    <a class="reviews__btn button">Написать</a>
-  </section>
-  <section class="contacts">
-    <h2 class="contacts__heading">Контакты</h2>
-    <dl class="contacts__data">
-      <dt class="contacts__term">e-mail:</dt>
-      <dd class="contacts__value"><a class="contacts__value-email" href="#">info@mimimishkashop.ru</a></dd>
-      <dt class="contacts__term">адрес:</dt>
-      <dd class="contacts__value">г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</dd>
-    </dl>
-    <img
-      alt="г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101" class="contacts__map"
-      height="457" src="http://placekitten.com/322/457" width="322">
-    <a class="contacts__link button">Напишите нам</a>
-  </section>
-</main>
-<footer class="page-footer">
-  <div class="page-footer__socials socials">
-    <ul class="socials__list">
-      <li class="socials__item"><a class="socials__link socials__link--inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
-      </li>
-      <li class="socials__item"><a class="socials__link socials__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
-      </li>
-      <li class="socials__item"><a class="socials__link socials__link--tw" href="#"><span class="visually-hidden">Твиттер</span></a>
-      </li>
-    </ul>
-  </div>
-  <div class="page-footer__copyright copyright">
-    <p class="copyright__text">Разработано</p>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <img alt="Логотип HTMLAcademy" class="copyright__img-logo" height="34" src="http://placekitten.com/27/34" width="27">
+
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img alt="Магазин Мишка" class="page-header__logo-img" height="35" src="http://placekitten.com/86/35" width="86">
     </a>
-  </div>
-</footer>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <header class="main-header">
+      <h1 class="main-header__heading">Милые штуки ручной<br> работы для дома</h1>
+      <ul class="main-header__list categories-list">
+        <li class="categories-list__item">
+          <a class="categories-list__link" href="#">Предметы интерьера</a>
+        </li>
+        <li class="categories-list__item categories-list__item--darker">
+          <a class="categories-list__link" href="#">Детские игрушки</a>
+        </li>
+      </ul>
+    </header>
+    <section class="week-product container">
+      <h2 class="week-product__heading">Вязаные корзинки</h2>
+      <p class="week-product__tag">Товар недели</p>
+      <p class="week-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+        размерах.</p>
+      <dl class="week-product__descriptions">
+        <div class="week-product__description-wrapper">
+          <dt class="week-product__description-term">Цвет:</dt>
+          <dd class="week-product__description-value">«Тиффани»/серый</dd>
+        </div>
+        <div class="week-product__description-wrapper">
+          <dt class="week-product__description-term">Диаметр:</dt>
+          <dd class="week-product__description-value">25 см</dd>
+        </div>
+        <div class="week-product__description-wrapper">
+          <dt class="week-product__description-term">Высота:</dt>
+          <dd class="week-product__description-value">15 см</dd>
+        </div>
+      </dl>
+      <img alt="Вязаные корзинки" class="week-product__img" height="315" src="http://placekitten.com/260/315" width="260">
+      <p class="week-product__price">Цена: 990 руб.</p>
+      <a class="week-product__btn button" href="#">Заказать</a>
+    </section>
+    <section class="advantages">
+      <h2 class="advantages__heading">Коротко о нас:</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
+        <li class="advantages__item advantages__item--price">Скандинавский стиль по российской цене</li>
+        <li class="advantages__item advantages__item--like">Увеличивает лайки на фотографиях</li>
+        <li class="advantages__item advantages__item--knit">Связано вручную с любовью и умилением</li>
+        <li class="advantages__item advantages__item--support">Поддержка отечественного производителя</li>
+        <li class="advantages__item advantages__item--present">Поставляется в подарочной упаковке</li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <h2 class="reviews__heading">Отзывы</h2>
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <blockquote class="reviews__blockquote">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+              лайков, как у
+              популярных инстамамочек. В отчаянии, я накупила аксессуаров
+              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+              больше лайков!
+            </p>
+            <cite class="reviews__author">Анастасия Красильникова<span class="reviews__email">@misssssiskras</span></cite>
+          </blockquote>
+        </li>
+      </ul>
+      <div class="reviews__slider-btns">
+        <button class="reviews__slider-btn reviews__slider-btn--previous" type="button">
+          <span class="visually-hidden">Предыдущий отзыв</span>
+        </button>
+        <button class="reviews__slider-btn reviews__slider-btn--next" type="button">
+          <span class="visually-hidden">Следующий отзыв</span>
+        </button>
+      </div>
+      <a class="reviews__btn button">Написать</a>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__heading">Контакты</h2>
+      <dl class="contacts__data">
+        <dt class="contacts__term">e-mail:</dt>
+        <dd class="contacts__value"><a class="contacts__value-email" href="#">info@mimimishkashop.ru</a></dd>
+        <dt class="contacts__term">адрес:</dt>
+        <dd class="contacts__value">г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+      </dl>
+      <img
+        alt="г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101" class="contacts__map"
+        height="457" src="http://placekitten.com/322/457" width="322">
+      <a class="contacts__link button">Напишите нам</a>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__socials socials">
+      <ul class="socials__list">
+        <li class="socials__item"><a class="socials__link socials__link--inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
+        </li>
+        <li class="socials__item"><a class="socials__link socials__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li class="socials__item"><a class="socials__link socials__link--tw" href="#"><span class="visually-hidden">Твиттер</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img alt="Логотип HTMLAcademy" class="copyright__img-logo" height="34" src="http://placekitten.com/27/34" width="27">
+      </a>
+    </div>
+  </footer>
+
 <section class="modal-order">
   <h2 class="modal-order__heading">Добавить в корзину</h2>
-  <form class="modal-order__form-size form-size"  action="https://echo.htmlacademy.ru" method="get">
+  <form class="modal-order__form-size form-size" action="https://echo.htmlacademy.ru" method="get">
     <fieldset class="form-size__fieldset">
       <legend class="form-size__legend">Выберите размер:</legend>
       <ul class="form-size__size-list">
