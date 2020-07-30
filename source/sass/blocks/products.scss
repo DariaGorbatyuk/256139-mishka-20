@@ -1,13 +1,14 @@
-.products__heading {
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 30px;
-  color: $basic-black;
-  background-color: $gray;
-}
-
 .products__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.products__item {
+  margin-bottom: 30px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 55px;
+  }
+
 }
