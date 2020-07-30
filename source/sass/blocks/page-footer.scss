@@ -1,0 +1,16 @@
+.page-footer {
+  background-color: $gray;
+  @media (min-width: $medium-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+  @media (min-width: $medium-width) {
+    display: block;
+  }
+}

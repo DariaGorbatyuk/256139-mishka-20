@@ -1,5 +1,40 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .socials__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 22px;
+}
+
+.socials__item {
+  margin-right: 40px;
+}
+
+.socials__link {
+  position: relative;
+
+  &::after {
+    @include pseudo();
+    @include size(22px, 22px);
+    background-repeat: no-repeat;
+  }
+
+  &--inst::after {
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &--fb::after {
+    background-image: url("../img/icon-fb.svg");
+  }
+
+  &--tw::after {
+    background-image: url("../img/icon-twitter.svg");
+  }
 }

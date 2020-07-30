@@ -6,10 +6,10 @@
 
   @media (min-width: $medium-width) {
     width: auto;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   @media (min-width: $large-width) {
     width: $large-width;
-    padding: 50px;
   }
 }
