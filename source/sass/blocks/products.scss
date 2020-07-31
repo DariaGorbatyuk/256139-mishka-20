@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $large-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .products__item {
@@ -9,6 +14,12 @@
 
   @media (min-width: $medium-width) {
     margin-bottom: 55px;
+  }
+  @media (min-width: $large-width) {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
 }

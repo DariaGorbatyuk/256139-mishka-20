@@ -3,14 +3,22 @@
   @media (min-width: $medium-width) {
     display: flex;
     flex-wrap: wrap;
-    min-height: 334px;
+  }
+  @media (min-width: $large-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 316px;
   }
 }
 
 .card__link-img {
 
   @media (min-width: $medium-width){
-    flex-basis: 50%;
+    width: 50%;
+  }
+  @media (min-width: $large-width) {
+    width: auto;
   }
 
 }
@@ -24,10 +32,18 @@
   border: 1px solid $shadow-header;
 
   @media (min-width: $medium-width) {
-    flex-basis: 50%;
+    width:  50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+  @media (min-width: $large-width) {
+    width: auto;
+  }
+}
+.card__info-wrapper-param{
+  @media (min-width: $large-width) {
+    min-height: 141px;
   }
 }
 
@@ -71,6 +87,9 @@
 
   @media (min-width: $medium-width) {
     margin-top: auto;
+  }
+  @media (min-width: $large-width) {
+    min-height: 73px;
   }
 }
 
