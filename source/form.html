@@ -104,20 +104,16 @@
     <fieldset class="form-order__fieldset form-order__fieldset--contacts">
       <legend class="visually-hidden">Контактные данные</legend>
       <div class="form-order__list form-order__list--contacts">
-        <div>
-          <label class="form-order__legend form-order__legend--contact" for="tel">тел</label>
-          <input class="form-order__control form-order__control--text form-order__control--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-        </div>
-        <div>
-          <label class="form-order__legend form-order__legend--contact" for="email">E-mail</label>
-          <input class="form-order__control form-order__control--text form-order__control--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
-        </div>
+        <label class="form-order__legend form-order__legend--contact" for="tel">тел</label>
+        <input class="form-order__control form-order__control--text form-order__control--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        <label class="form-order__legend form-order__legend--contact" for="email">E-mail</label>
+        <input class="form-order__control form-order__control--text form-order__control--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
       </div>
     </fieldset>
-    <div class="form-order__list form-order__list--add">
-      <label class="form-order__legend form-order__legend--contact" for="additional">Доп</label>
-      <textarea class="form-order__control form-order__control--text form-order__control--textarea" name="additional" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-    </div>
+      <div class="form-order__list form-order__list--add">
+        <label class="form-order__legend form-order__legend--contact" for="additional">Доп</label>
+        <textarea class="form-order__control form-order__control--text form-order__control--textarea" name="additional" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </div>
     <div class="form-order__list form-order__list--submit">
       <small class="form-order__small">*Поля обязательны для заполнения</small>
       <button class="form-order__submit button" type="submit">Отправить заказ</button>

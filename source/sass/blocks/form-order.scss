@@ -122,6 +122,10 @@
 
 .form-order__legend {
   &--contact {
+    @media (min-width: $small-width){
+      display: block;
+      width: 100%;
+    }
     @media (min-width: $large-width) {
       grid-column: 1/span 1;
     }
