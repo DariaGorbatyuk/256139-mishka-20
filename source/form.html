@@ -34,49 +34,51 @@
   </nav>
 </header>
 <main class="page-main">
-  <h1 class="page-main__heading">Вязание на заказ</h1>
-  <p class="page-main__text">
+  <header class="main-header  main-header--other container">
+    <h1 class="main-header__heading">Вязание на заказ</h1>
+  </header>
+  <p class="page-main__text container">
     Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
   </p>
-  <form class="page-main__form-order form-order" action="https://echo.htmlacademy.ru" method="post">
-    <fieldset class="form-order__fieldset">
+  <form class="page-main__form-order form-order container" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="form-order__fieldset ">
       <legend class="form-order__legend">Тип</legend>
-      <ul class="form-order__list">
-        <li class="form-order__item">
-          <input class="form-order__control form-order__control--radio" type="radio" name="thing-type" id="thing-type-accessory" value="accessory" checked>
-          <label class="form-order__label form-order__label--radio" for="thing-type-accessory">Аксессуар для
-            интерьера</label>
-        </li>
-        <li class="form-order__item">
-          <input class="form-order__control form-order__control--radio" type="radio" name="thing-type" id="thing-type-toy" value="toy">
-          <label class="form-order__label form-order__label--radio" for="thing-type-toy">Детская игрушка</label>
-        </li>
-      </ul>
+        <ul class="form-order__list form-order__list--type">
+          <li class="form-order__item">
+            <input class="form-order__control form-order__control--radio" type="radio" name="thing-type" id="thing-type-accessory" value="accessory" checked>
+            <label class="form-order__label form-order__label--radio" for="thing-type-accessory">Аксессуар для
+              интерьера</label>
+          </li>
+          <li class="form-order__item">
+            <input class="form-order__control form-order__control--radio" type="radio" name="thing-type" id="thing-type-toy" value="toy">
+            <label class="form-order__label form-order__label--radio" for="thing-type-toy">Детская игрушка</label>
+          </li>
+        </ul>
     </fieldset>
-    <fieldset class="form-order__fieldset">
+    <fieldset class="form-order__fieldset form-order__fieldset--color">
       <legend class="form-order__legend">Цвет</legend>
-      <ul class="form-order__list">
-        <li class="form-order__item">
+      <ul class="form-order__list form-order__list--color">
+        <li class="form-order__item form-order__item--color form-order__item--color">
           <input class="form-order__control form-order__control--check" type="checkbox" name="color-white" id="color-white" checked>
           <label class="form-order__label form-order__label--check" for="color-white">Белый</label>
         </li>
-        <li class="form-order__item">
+        <li class="form-order__item form-order__item--color form-order__item--color">
           <input class="form-order__control form-order__control--check" type="checkbox" name="color-gray" id="color-gray" checked>
           <label class="form-order__label form-order__label--check" for="color-gray">Серый</label>
         </li>
-        <li class="form-order__item">
+        <li class="form-order__item form-order__item--color form-order__item--color">
           <input class="form-order__control form-order__control--check" type="checkbox" name="color-tiffany" id="color-tiffany">
           <label class="form-order__label form-order__label--check" for="color-tiffany">«Тиффани»</label>
         </li>
-        <li class="form-order__item">
+        <li class="form-order__item form-order__item--color form-order__item--color">
           <input class="form-order__control form-order__control--check" type="checkbox" name="color-black" id="color-black">
           <label class="form-order__label form-order__label--check" for="color-black">Черный</label>
         </li>
-        <li class="form-order__item">
+        <li class="form-order__item form-order__item--color form-order__item--color">
           <input class="form-order__control form-order__control--check" type="checkbox" name="color-pink" id="color-pink">
           <label class="form-order__label form-order__label--check" for="color-pink">Розовый</label>
         </li>
-        <li class="form-order__item">
+        <li class="form-order__item form-order__item--color form-order__item--color">
           <input class="form-order__control form-order__control--check" type="checkbox" name="color-orange" id="color-orange">
           <label class="form-order__label form-order__label--check" for="color-orange">Оранжевый</label>
         </li>
@@ -85,15 +87,15 @@
     <fieldset class="form-order__fieldset">
       <legend class="form-order__legend">ФИО</legend>
       <ul class="form-order__list">
-        <li class="form-order__item">
+        <li class="form-order__item ">
           <input type="text" class="form-order__control form-order__control--text" name="name" id="name" placeholder="Введите ваше имя*" required>
           <label for="name" class="form-order__label form-order__label--text">Имя:</label>
         </li>
-        <li class="form-order__item">
+        <li class="form-order__item ">
           <input type="text" class="form-order__control form-order__control--text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
           <label for="surname" class="form-order__label form-order__label--text">Фамилия:</label>
         </li>
-        <li class="form-order__item">
+        <li class="form-order__item ">
           <input type="text" class="form-order__control form-order__control--text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
           <label for="patronymic" class="form-order__label form-order__label--text">Отчество:</label>
         </li>

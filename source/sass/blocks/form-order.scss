@@ -1,6 +1,9 @@
 .form-order__fieldset {
   border: 0;
   padding: 0;
+  &--color{
+    background-color: $gray;
+  }
 }
 
 .form-order__legend {
@@ -9,12 +12,19 @@
   line-height: 16px;
   color: $turquoise;
   text-transform: uppercase;
+
 }
 
 .form-order__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+
+}
+
+.form-order__item {
+
 }
 
 .form-order__label {
