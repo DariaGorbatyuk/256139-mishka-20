@@ -23,30 +23,48 @@
   list-style: none;
 
   @media (min-width: $medium-width) {
+    display: grid;
     &--type {
-      display: grid;
       grid-template-columns: 1fr 3fr;
-      grid-template-rows: repeat(2, minmax(55px, auto));
     }
     &--color {
-      display: grid;
       grid-template-columns: 2fr 3fr 3fr;
     }
     &--id {
-      display: grid;
       grid-template-columns: 1fr 3fr;
     }
     &--contacts {
-      display: grid;
       grid-template-columns: 1fr 3fr;
     }
     &--add {
-      display: grid;
       grid-template-columns: 1fr 3fr;
     }
     &--submit {
-      display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: $large-width) {
+    &--type {
+      grid-template-columns: 1fr 2fr 3fr;
+      grid-auto-flow: column;
+    }
+    &--color {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 175px;
+    }
+    &--id {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    &--contacts {
+      grid-template-columns: 1fr 4fr 1fr;
+    }
+    &--add {
+      grid-template-columns: 1fr 4fr 1fr;
+    }
+    &--submit {
+      grid-template-columns: 1fr 2fr 2fr 1fr;
     }
   }
 }
@@ -61,12 +79,32 @@
         grid-column: 2/span 1;
       }
 
-       &:nth-child(even) {
+      &:nth-child(even) {
         grid-column: 3/span 1;
       }
     }
     &--id {
       grid-column: 2/-1;
+    }
+  }
+  @media (min-width: $large-width) {
+    &--type {
+      @for $i from 1 through 2 {
+        &:nth-child(#{$i}n) {
+          grid-column: 2/ span 1;
+        }
+      }
+      @for $i from 3 through 4 {
+        &:nth-child(#{$i}n) {
+          grid-column: 3/ span 1;
+        }
+      }
+    }
+    &--color {
+      width: 262px;
+    }
+    &--id {
+      grid-column: 2/-2;
     }
   }
 }
@@ -82,6 +120,14 @@
   }
 }
 
+.form-order__legend {
+  &--contact {
+    @media (min-width: $large-width) {
+      grid-column: 1/span 1;
+    }
+  }
+}
+
 .form-order__control {
   &--text {
     border: 0;
@@ -91,6 +137,7 @@
     line-height: 18px;
     color: $text;
   }
+
   &--textarea {
     border: 2px solid $text;
     box-shadow: none;
@@ -108,18 +155,22 @@
 
   @media (min-width: $medium-width) {
     &--tel,
-    &--email{
+    &--email {
       background-color: $gray;
     }
     &--text {
-    font-size: 19px;
+      font-size: 19px;
     }
     &::placeholder {
       font-size: 19px;
     }
   }
+  @media (min-width: $large-width) {
+    &--short {
+      width: 85%;
+    }
+  }
 }
-
 
 
 .form-order__small {
@@ -134,4 +185,7 @@
     order: -1;
     width: 230px;
   }
+  @media (min-width: $large-width) {
+    grid-column: 2/span 1;
+    }
 }

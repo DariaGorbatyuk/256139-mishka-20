@@ -17,4 +17,9 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: $large-width) {
+    padding-left: 174px;
+    padding-right: 256px;
+    }
 }
