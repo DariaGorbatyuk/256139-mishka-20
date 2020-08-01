@@ -12,4 +12,9 @@
   font-size: 13px;
   line-height: 24px;
   color: $text;
+
+  @media (min-width: $medium-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
