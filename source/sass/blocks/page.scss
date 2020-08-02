@@ -1,5 +1,6 @@
 .page {
   box-sizing: border-box;
+  height: 100%;
 }
 
 .page__body {
@@ -12,4 +13,7 @@
   line-height: 24px;
   background-color: $basic-white;
   min-width: $small-width;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
