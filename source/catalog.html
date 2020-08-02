@@ -180,27 +180,28 @@
     </a>
   </div>
 </footer>
-<section class="modal-order">
-  <h2 class="modal-order__heading">Добавить в корзину</h2>
+
+<section class="modal-order container">
+  <h2 class="modal-order__heading">Добавить в&nbsp;корзину</h2>
   <form class="modal-order__form-size form-size" action="https://echo.htmlacademy.ru" method="get">
     <fieldset class="form-size__fieldset">
       <legend class="form-size__legend">Выберите размер:</legend>
       <ul class="form-size__size-list">
         <li class="form-size__size-item">
-          <input class="form-size__control form-size__control--active" type="radio" name="size" id="size-s" value="s" checked>
+          <input checked class="form-size__control form-size__control--active" id="size-s" name="size" type="radio" value="s">
           <label class="form-size__label" for="size-s">S</label>
         </li>
-        <li class="modal-order__size-item">
-          <input class="form-size__control" type="radio" name="size" id="size-m" value="m">
+        <li class="form-size__size-item">
+          <input class="form-size__control" id="size-m" name="size" type="radio" value="m">
           <label class="form-size__label" for="size-m">M</label>
         </li>
-        <li class="modal-order__size-item">
-          <input class="form-size__control" type="radio" name="size" id="size-l" value="l">
+        <li class="form-size__size-item">
+          <input class="form-size__control" id="size-l" name="size" type="radio" value="l">
           <label class="form-size__label" for="size-l">L</label>
         </li>
       </ul>
     </fieldset>
-    <button class="modal-order__btn" type="submit">Добавить</button>
+    <button class="form-size__btn" type="submit">Добавить</button>
   </form>
 </section>
 </body>
