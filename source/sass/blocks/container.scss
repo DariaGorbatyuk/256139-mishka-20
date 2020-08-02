@@ -3,9 +3,9 @@
   padding: 0 30px;
   margin: 0 auto;
   position: relative;
-
-
-
+  &--space{
+    padding: 0;
+  }
   @media (min-width: $medium-width) {
     width: auto;
     padding-left: 50px;
@@ -15,7 +15,5 @@
     width: $large-width;
     margin: 0 auto;
   }
-  &--space{
-    padding: 0;
-  }
+
 }
