@@ -4,7 +4,7 @@
   position: $pos;
 }
 
-@mixin size( $width, $height: auto){
+@mixin size( $width, $height: auto) {
   width: $width;
   height: $height;
 }

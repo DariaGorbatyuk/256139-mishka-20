@@ -1,5 +1,6 @@
 .page-footer {
   background-color: $gray;
+
   @media (min-width: $medium-width) {
     display: flex;
     flex-wrap: wrap;
@@ -10,6 +11,7 @@
 
 .page-footer__logo {
   display: none;
+
   @media (min-width: $medium-width) {
     display: block;
   }

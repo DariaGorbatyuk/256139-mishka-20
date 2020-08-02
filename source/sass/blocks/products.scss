@@ -15,11 +15,12 @@
   @media (min-width: $medium-width) {
     margin-bottom: 55px;
   }
+
   @media (min-width: $large-width) {
     margin-right: 50px;
+
     &:last-child {
       margin-right: 0;
     }
   }
-
 }

@@ -6,6 +6,7 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+
   @media (min-width: $large-width) {
     border: none;
   }
@@ -17,7 +18,6 @@
     grid-template-columns: 4fr 2fr;
     grid-template-rows: repeat(2, 1fr);
     border: 1px solid $shadow-header;
-
   }
 }
 
@@ -32,6 +32,7 @@
     font-size: 20px;
     padding-left: 106px;
   }
+
   @media (min-width: $large-width) {
     grid-column: 2/-1;
   }
@@ -41,6 +42,7 @@
   @media (min-width: $medium-width) {
     order: -1;
   }
+
   @media (min-width: $large-width) {
     grid-column: 1/2;
     grid-row: 1/-1;
@@ -53,6 +55,7 @@
   @media (min-width: $medium-width) {
     padding: 0 40px;
   }
+
   @media (min-width: $large-width) {
     grid-column: 2/-1;
   }
