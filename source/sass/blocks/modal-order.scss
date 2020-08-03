@@ -3,6 +3,7 @@
   border-top: 1px solid $gray-line;
   box-shadow: 0 5px 10px rgba($modal-shadow, 0.25);
   text-align: center;
+  margin: 0 auto;
 
   @media (min-width: $medium-width) {
     width: 566px;

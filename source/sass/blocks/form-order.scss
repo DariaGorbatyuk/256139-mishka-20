@@ -1,15 +1,12 @@
 .form-order__fieldset {
   border: 0;
-  padding: 0;
+}
 
-  &--color,
-  &--contacts {
-    background-color: $gray;
-  }
+.form-order__fieldset-wrapper {
+  background-color: $gray;
 }
 
 .form-order__list {
-  margin: 0;
   padding: 0;
   list-style: none;
 
