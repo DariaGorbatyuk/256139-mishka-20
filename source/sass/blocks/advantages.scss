@@ -55,17 +55,16 @@
   }
 
   @media (min-width: $large-width) {
-    @for $i from 1 through 3 {
-
-      &:nth-child(#{$i}n) {
-        grid-column: 2/ span 2;
-      }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      grid-column: 2/ span 2;
     }
-    @for $i from 4 through 6 {
 
-      &:nth-child(#{$i}n) {
-        grid-column: 4/ span 2;
-      }
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      grid-column: 4/ span 2;
     }
   }
 }
