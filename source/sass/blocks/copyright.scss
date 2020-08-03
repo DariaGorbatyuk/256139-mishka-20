@@ -1,6 +1,26 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 45px;
+  padding-right: 10px;
+  justify-content: space-between;
+
+  @media (min-width: $medium-width) {
+    padding: 0;
+  }
+}
+
 .copyright__text {
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
   color: $basic-black;
+}
+
+.copyright__img-svg {
+  @include size(40px, 56px);
+}
+
+.copyright__img-path {
+  fill: $turquoise;
 }

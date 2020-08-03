@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  padding: 0 30px;
+  max-width: 1150px;
+  min-width: 320px;
+
+  &--space {
+    padding: 0;
+  }
+
+  @media (min-width: $medium-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $large-width) {
+    margin: 0 auto;
+  }
+}

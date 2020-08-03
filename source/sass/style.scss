@@ -1,12 +1,15 @@
-@import "general";
 @import "variables";
+@import "general";
 @import "mixins";
 @import "fonts";
 @import "blocks/visually-hidden";
 @import "blocks/button";
+//header
 @import "blocks/page";
-@import "blocks/page-header";
+@import "blocks/container";
+@import "blocks/nav";
 @import "blocks/site-list";
+//main
 @import "blocks/page-main";
 @import "blocks/main-header";
 @import "blocks/categories-list";
@@ -14,12 +17,17 @@
 @import "blocks/advantages";
 @import "blocks/reviews";
 @import "blocks/contacts";
+//footer
+@import "blocks/page-footer";
 @import "blocks/socials";
 @import "blocks/copyright";
+//modal
 @import "blocks/modal-order";
 @import "blocks/form-size";
+//catalog
 @import "blocks/card";
-@import "blocks/form-order";
 @import "blocks/process";
 @import "blocks/products";
 @import "blocks/video";
+//form
+@import "blocks/form-order";

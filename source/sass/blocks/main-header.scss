@@ -1,9 +1,43 @@
-.main-header__heading {
+.main-header {
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-color: $main-header-bc;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: $main-header;
+  position: relative;
+  padding-top: 73px;
+
+  @media (min-width: $medium-width) {
+    background-image: url("../img/hero-tablet@1x.jpg");
+  }
+
+  @media (min-width: $large-width) {
+    background-image: url("../img/hero-desktop@1x.jpg");
+  }
+
+  &--other {
+    @media (min-width: $small-width) {
+      background-image: none;
+      background-color: $gray;
+    }
+  }
+}
+
+.main-header__heading {
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
   color: $black-header;
   margin: 0;
+  text-align: center;
+
+  @media (min-width: $medium-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $large-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

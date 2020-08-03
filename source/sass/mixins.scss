@@ -3,3 +3,8 @@
   display: $display;
   position: $pos;
 }
+
+@mixin size( $width, $height: auto) {
+  width: $width;
+  height: $height;
+}

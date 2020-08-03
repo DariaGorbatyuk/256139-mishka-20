@@ -14,15 +14,33 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-size__size-item {
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .form-size__control {
   & + .form-size__label {
-    border: 2px solid rgba($text, 0.1);
+    padding: 10px 33px;
+    display: block;
+    box-shadow: 0 0 0 2px rgba($text, 0.1);
+    font-weight: bold;
+    font-size: 17px;
+
+    @media (min-width: $medium-width) {
+      padding: 13px 50px;
+    }
   }
 
   &--active + .form-size__label {
-    border: 2px solid $turquoise;
+    box-shadow: 0 0 0 2px $turquoise;
   }
 }
 

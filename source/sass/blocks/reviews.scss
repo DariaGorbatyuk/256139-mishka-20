@@ -1,14 +1,57 @@
+.reviews {
+  text-align: left;
+  display: grid;
+
+  @media (min-width: $medium-width) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+  }
+
+  @media (min-width: $large-width) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    background-origin: content-box;
+  }
+}
+
 .reviews__heading {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: $basic-black;
+
+  @media (min-width: $medium-width) {
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 1;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $large-width) {
+    font-size: 53px;
+    line-height: 57px;
+    grid-column: 2/ span 2;
+    grid-row: 1/ span 1;
+  }
 }
 
 .reviews__list {
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $medium-width) {
+    grid-column: 1/ -1;
+    grid-row: 2/ span 1;
+  }
+
+  @media (min-width: $large-width) {
+    grid-column: 2/ -1;
+    grid-row: 2/ -1;
+  }
 }
 
 .reviews__blockquote {
@@ -20,6 +63,10 @@
   font-size: 15px;
   line-height: 30px;
   color: $text;
+
+  @media (min-width: $medium-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author {
@@ -28,6 +75,14 @@
   line-height: 24px;
   color: $basic-black;
   font-style: normal;
+
+  @media (min-width: $medium-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $large-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__email {
@@ -39,9 +94,47 @@
 
 .reviews__slider-btns {
   width: 100%;
+  font-size: 0;
+
+  @media (min-width: $medium-width) {
+    grid-column: 4/ span 1;
+    grid-row: 2/ span 1;
+    align-self: end;
+  }
+
+  @media (min-width: $large-width) {
+    grid-column: -2/-1;
+  }
 }
 
 .reviews__slider-btn {
   border: 1px solid $shadow-header;
   width: 49%;
+  height: 52px;
+  background-color: $basic-white;
+  padding: 0;
+  background-image: url("../img/icon-left-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--next {
+    border-right: none;
+    transform: scale(-1);
+  }
+
+  @media (min-width: $medium-width) {
+    border: none;
+  }
+}
+
+.reviews__btn {
+  @media (min-width: $medium-width) {
+    grid-column: 4/ span 1;
+    grid-row: 1/ span 1;
+    align-self: center;
+  }
+
+  @media (min-width: $large-width) {
+    grid-column: -2/-1;
+  }
 }

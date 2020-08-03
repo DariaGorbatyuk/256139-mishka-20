@@ -1,13 +1,26 @@
-.products__heading {
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 30px;
-  color: $basic-black;
-  background-color: $gray;
-}
-
 .products__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $large-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.products__item {
+  margin-bottom: 30px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
