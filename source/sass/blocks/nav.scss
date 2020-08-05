@@ -2,10 +2,84 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 21px;
+
+  @media (min-width: $medium-width) {
+    display: grid;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--closed {
+
+    .nav__site-list {
+      display: none;
+
+      @media (min-width: $medium-width) {
+        display: grid;
+      }
+    }
+
+    .nav__toggle:before {
+      @include pseudo();
+      width: 20px;
+      height: 2px;
+      background-color: $cart;
+      top: 0;
+      left: 6px;
+      box-shadow: 0 6px,
+      0 12px;
+    }
+  }
+
+  &--opened {
+    padding-top: 22px;
+    padding-bottom: 0;
+
+    @media (min-width: $medium-width) {
+      padding-top: 0;
+    }
+
+    .nav__site-list {
+      margin-top: 20px;
+      margin-bottom: 0;
+
+      @media (min-width: $medium-width) {
+        margin-top: 0;
+      }
+    }
+
+    .nav__toggle:before,
+    .nav__toggle:after {
+      @include pseudo();
+      width: 26px;
+      height: 2px;
+      background-color: $basic-black;
+    }
+
+    .nav__toggle:before {
+      transform: rotate(45deg);
+    }
+
+    .nav__toggle:after {
+      transform: rotate(-45deg);
+    }
+
+  }
+
+  &--no-js {
+    .nav__site-list {
+      display: grid;
+    }
+
+    .nav__toggle {
+      display: none;
+    }
+  }
 
   @media (min-width: $medium-width) {
     display: block;
-    width: min-content;
     margin: 0 auto;
   }
 }
@@ -16,6 +90,8 @@
 
   @media (min-width: $medium-width) {
     position: absolute;
+    top: 25px;
+    left: 5px;
   }
 
   @media (min-width: $large-width) {
@@ -27,10 +103,16 @@
 
 .nav__toggle {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 30px;
+  right: 31px;
+  width: 26px;
+  height: 20px;
+  border: 0;
+  padding: 0;
+  background-color: $basic-white;
 
   @media (min-width: $medium-width) {
     display: none;
   }
 }
+
