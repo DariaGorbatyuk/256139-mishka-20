@@ -13,8 +13,7 @@
   }
 
   @media (min-width: $large-width) {
-    display: grid;
-    grid-template-columns: 184px 515px 84px 267px;
+    grid-template-columns: 184px 228px 288px 83px 264px;
     grid-template-rows: minmax(89px, auto) minmax(61px, auto);
   }
 }
@@ -74,6 +73,20 @@
     }
     &:nth-last-child(2) {
       margin-left: 36px;
+    }
+    &--search {
+      grid-column: 4/span 1;
+    }
+
+    &--basket {
+      grid-column: 5/ span 1;
+      justify-self: end;
+    }
+
+    &:last-child {
+      display: block;
+      grid-column: 5/ span 1;
+      justify-self: end;
     }
   }
 }
