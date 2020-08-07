@@ -19,7 +19,18 @@
   max-width: 100%;
   padding-top: 24px;
   padding-left: 30px;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
+  padding-right: 113px;
+  position: relative;
+
+  &::after{
+    @include pseudo();
+    @include size(40px, 62px);
+    background-image: url("../img/icon-interior.svg");
+    right: 36px;
+    top: 24px;
+    opacity: 0.5;
+  }
 
   @media (min-width: $medium-width) {
     flex-basis: 50%;
@@ -30,6 +41,12 @@
 
   &--darker {
     background-color: $turquoise-darker;
+    &::after{
+      @include size(60px, 60px);
+      background-image: url("../img/icon-toy.svg");
+      right: 27px;
+      top: 20px;
+    }
   }
 }
 
