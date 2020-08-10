@@ -1,6 +1,3 @@
-.page-main{
-}
-
 .page-main__heading {
   font-weight: bold;
   font-size: 27px;
@@ -24,5 +21,16 @@
   @media (min-width: $large-width) {
     padding-left: 174px;
     padding-right: 256px;
+  }
+}
+.page-main__main-header{
+  margin-bottom: 30px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 73px;
   }
 }
