@@ -9,6 +9,16 @@
 
   @media (min-width: $medium-width) {
     background-image: url("../img/hero-tablet@1x.jpg");
+    margin-top: -62px;
+    position: relative;
+
+    &::after {
+      @include pseudo();
+      @include size(100%, 24px);
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      left: 0;
+      bottom: -10px;
+    }
   }
 
   @media (min-width: $large-width) {
@@ -29,15 +39,31 @@
   line-height: 30px;
   color: $black-header;
   text-align: center;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media (min-width: $medium-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 85px;
+    padding: 0 160px;
   }
 
   @media (min-width: $large-width) {
     font-size: 53px;
     line-height: 57px;
+  }
+}
+
+.main-header__categories-list {
+  margin: 0;
+  margin-top: 120px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 370px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-top: 354px;
   }
 }
