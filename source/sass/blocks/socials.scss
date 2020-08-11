@@ -1,20 +1,50 @@
 .socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-bottom: 24px;
+  position: relative;
+
+  &::after{
+    @include pseudo();
+    @include size(100% , 1px);
+    background-color: $footer-line;
+    bottom: 0;
+  }
+
+  @media (min-width: $medium-width) {
+    padding-bottom: 0;
+    flex-basis: 45%;
+    max-width: 45%;
+
+    &::after{
+      display: none;
+    }
+  }
 }
 
 .socials__list {
   margin: 0;
-  padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  min-height: 22px;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0 43px;
+
+  @media (min-width: $medium-width) {
+    padding: 0;
+    justify-content: center;
+  }
 }
 
 .socials__item {
-  margin-right: 40px;
+  @include size(22px, 28px);
+
+  @media (min-width: $medium-width) {
+    margin-right: 38px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }
 
 .socials__link {
@@ -32,6 +62,7 @@
 
   &--fb::after {
     background-image: url("../img/icon-fb.svg");
+    @include size(22px, 28px);
   }
 
   &--tw::after {

@@ -17,3 +17,16 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
+
+.page__page-main{
+  margin-bottom: 38px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 56px;
+  }
+
+
+  @media (min-width: $large-width) {
+    margin-bottom: 105px;
+  }
+}

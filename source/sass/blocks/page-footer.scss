@@ -2,12 +2,15 @@
   background-color: $gray;
 }
 
-.page-footer--wrapper {
+.page-footer__wrapper{
+  padding-top: 30px;
+
   @media (min-width: $medium-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    padding-top: 0;
+    min-height: 143px;
   }
 }
 
@@ -16,5 +19,7 @@
 
   @media (min-width: $medium-width) {
     display: block;
+    flex-basis: 27%;
+    max-width: 27%;
   }
 }
