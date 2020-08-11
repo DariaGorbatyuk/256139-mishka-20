@@ -45,3 +45,14 @@
     margin-bottom: 67px;
   }
 }
+.page-main__advantages{
+  margin-bottom: 57px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 73px;
+  }
+}

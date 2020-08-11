@@ -1,19 +1,33 @@
 .reviews {
   text-align: left;
-  display: grid;
+  display: block;
+  padding-bottom: 68px;
+
+  &::after{
+    @include pseudo();
+    @include size(100%, 23px);
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+  }
 
   @media (min-width: $medium-width) {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, min-content);
+    grid-template-rows: minmax(131px, auto) min-content;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: top 0 left 0;
+    padding-bottom: 111px;
   }
 
   @media (min-width: $large-width) {
+    grid-template-rows: minmax(133px, auto) min-content;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, min-content);
     background-origin: content-box;
+    padding-bottom: 157px;
   }
 }
 
@@ -22,12 +36,16 @@
   font-size: 25px;
   line-height: 30px;
   color: $basic-black;
+  margin: 0;
+  margin-bottom: 14px;
 
   @media (min-width: $medium-width) {
     grid-column: 1/ span 2;
     grid-row: 1/ span 1;
     font-size: 43px;
     line-height: 50px;
+    margin: 0;
+    align-self: end;
   }
 
   @media (min-width: $large-width) {
@@ -42,6 +60,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 30px;
 
   @media (min-width: $medium-width) {
     grid-column: 1/ -1;
@@ -63,9 +82,17 @@
   font-size: 15px;
   line-height: 30px;
   color: $text;
+  margin: 0;
+  margin-bottom: 35px;
 
   @media (min-width: $medium-width) {
     font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 41px;
   }
 }
 
@@ -88,18 +115,21 @@
 .reviews__email {
   font-weight: normal;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 33px;
   color: $text;
 }
 
 .reviews__slider-btns {
   width: 100%;
   font-size: 0;
+  line-height: 0;
+  margin-bottom: 38px;
 
   @media (min-width: $medium-width) {
     grid-column: 4/ span 1;
     grid-row: 2/ span 1;
     align-self: end;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $large-width) {
@@ -109,7 +139,7 @@
 
 .reviews__slider-btn {
   border: 1px solid $shadow-header;
-  width: 49%;
+  width: 49.9%;
   height: 52px;
   background-color: $basic-white;
   padding: 0;
@@ -128,13 +158,18 @@
 }
 
 .reviews__btn {
+  padding-top: 15px;
+  padding-bottom: 13px;
+
   @media (min-width: $medium-width) {
-    grid-column: 4/ span 1;
+    grid-column: 3/ span 2;
     grid-row: 1/ span 1;
-    align-self: center;
+    align-self: end;
+    margin-left: 159px;
   }
 
   @media (min-width: $large-width) {
     grid-column: -2/-1;
+    margin: 0;
   }
 }
