@@ -34,3 +34,14 @@
     margin-bottom: 73px;
   }
 }
+.page-main__week-product{
+  margin-bottom: 14px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 67px;
+  }
+}

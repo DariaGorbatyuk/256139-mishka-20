@@ -1,13 +1,9 @@
-.advantages {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-}
-
 .advantages__heading {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: $basic-black;
+  margin: 0;
 
   @media (min-width: $medium-width) {
     font-size: 43px;
@@ -19,17 +15,17 @@
     font-size: 53px;
     line-height: 57px;
     grid-column: 2/-1;
+    margin-left: 175px;
   }
 }
 
 .advantages__list {
-  grid-column: 1/-1;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
 
   @media (min-width: $medium-width) {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, min-content);
     grid-auto-flow: column;
@@ -48,10 +44,69 @@
   font-size: 17px;
   line-height: 20px;
   color: $basic-black;
+  padding-top: 83px;
+  position: relative;
+
+  &::before {
+    @include pseudo();
+    background-repeat: no-repeat;
+    top: 30px;
+    left: 0;
+  }
+
+  &--eco {
+    &::before {
+      @include size(32px, 37px);
+      background-image: url("../../img/icon-feature-flower.svg");
+      left: 7px;
+    }
+  }
+
+  &--price {
+    &::before {
+      @include size(47px, 27px);
+      background-image: url("../../img/icon-feature-money.svg");
+    }
+  }
+
+  &--like {
+    &::before {
+      @include size(34px, 27px);
+      background-image: url("../../img/icon-feature-heart.svg");
+      left: 7px;
+    }
+  }
+
+  &--knit{
+    &::before{
+      @include size(35px, 34px);
+      background-image: url("../../img/icon-feature-ball.svg");
+    }
+  }
+
+  &--support{
+    &::before{
+      @include size(55px, 23px);
+      background-image: url("../../img/icon-feature-rocket.svg");
+    }
+  }
+
+  &--present{
+    &::before{
+      @include size(33px, 32px);
+      background-image: url("../../img/icon-feature-gift.svg");
+    }
+  }
 
   @media (min-width: $medium-width) {
     font-size: 20px;
     line-height: 22px;
+    padding-top: 97px;
+    padding-bottom: 14px;
+
+    &::before {
+      top: 45px;
+    }
   }
 
   @media (min-width: $large-width) {
