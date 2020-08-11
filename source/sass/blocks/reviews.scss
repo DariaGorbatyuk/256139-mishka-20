@@ -3,7 +3,7 @@
   display: block;
   padding-bottom: 68px;
 
-  &::after{
+  &::after {
     @include pseudo();
     @include size(100%, 23px);
     background-image: url("../../img/bg-zigzag-line.svg");
@@ -60,7 +60,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   @media (min-width: $medium-width) {
     grid-column: 1/ -1;
