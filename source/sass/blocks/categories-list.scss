@@ -65,6 +65,12 @@
         opacity: 0.7;
       }
     }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 
   @media (min-width: $medium-width) {

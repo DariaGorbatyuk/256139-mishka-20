@@ -38,8 +38,14 @@
 
 .copyright__img-svg {
   @include size(40px, 40px);
-}
-
-.copyright__img-path {
   fill: $turquoise;
+
+  &:hover,
+  &:focus {
+    fill: $turquoise-darker-active;
+  }
+
+  &:active {
+    fill: rgba($turquoise-darker-active, 0.3)
+  }
 }

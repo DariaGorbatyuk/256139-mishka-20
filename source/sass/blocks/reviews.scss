@@ -152,6 +152,15 @@
     transform: scale(-1);
   }
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $medium-width) {
     border: none;
   }

@@ -107,6 +107,19 @@
   border-bottom: 1px solid $turquoise-darker;
   padding-bottom: 2px;
 
+  &:hover,
+  &:focus{
+    color: $turquoise-darker-active;
+    border-bottom: 1px solid $turquoise-darker-active;
+    outline: none;
+  }
+
+  &:active{
+    color: $turquoise-darker-active;
+    border-bottom: 1px solid rgba($turquoise-darker-active, 0.1);
+    outline: none;
+  }
+
   @media (min-width: $large-width) {
     padding-bottom: 6px;
   }

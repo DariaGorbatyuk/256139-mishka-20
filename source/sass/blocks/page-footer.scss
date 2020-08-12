@@ -23,3 +23,16 @@
     max-width: 27%;
   }
 }
+
+.page-footer__logo-img{
+  fill: $basic-black;
+
+  &:hover,
+  &:focus{
+    fill: $turquoise-darker-active;
+  }
+
+  &:active{
+    fill: rgba($turquoise-darker-active, 0.3)
+  }
+}
