@@ -11,8 +11,7 @@
     display: grid;
     grid-template-columns: 4fr 2fr;
     column-gap: 22px;
-    grid-template-rows: repeat(2, min-content);
-    border: 1px solid $shadow-header;
+    grid-template-rows: minmax(142px, min-content) min-content;
   }
 }
 
@@ -83,6 +82,8 @@
 
   @media (min-width: $large-width) {
     grid-column: 2/-1;
+    padding-left: 55px;
+    padding-right: 56px;
   }
 }
 
@@ -98,7 +99,9 @@
     font-size: 15px;
     line-height: 30px;
     margin-bottom: 39px;
-
+  }
+  @media (min-width: $large-width) {
+    margin-bottom: 53px;
   }
 }
 
@@ -109,5 +112,8 @@
 
   @media (min-width: $medium-width) {
     margin-right: 7px;
+  }
+  @media (min-width: $large-width) {
+    margin-right: 0;;
   }
 }

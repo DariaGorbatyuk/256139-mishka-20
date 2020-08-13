@@ -5,6 +5,16 @@
   padding-bottom: 58.25%;
   background-color: $basic-white;
 
+  &:hover .video__btn,
+  &:focus .video__btn{
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active .video__btn{
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+
   @media (min-width: $medium-width) {
     padding-bottom: 68.25%;
     order: -1;
@@ -38,14 +48,4 @@
   padding: 0;
   background-color: transparent;
   outline: none;
-
-
-  &:hover,
-  &:focus {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-
-  &:active{
-    opacity: 0.3;
-  }
 }
