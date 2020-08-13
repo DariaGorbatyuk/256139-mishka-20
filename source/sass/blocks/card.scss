@@ -32,23 +32,35 @@
 
 .card__info-wrapper {
   border: 1px solid $shadow-header;
-  padding: 0 25px;
+  padding: 0 26px;
+  padding-top: 28px;
 
   @media (min-width: $medium-width) {
     width: 50%;
+    max-width: 50%;
+    min-width: 0;
+    word-break: break-word;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-left: 33px;
+    padding-right: 30px;
   }
 
   @media (min-width: $large-width) {
-    width: auto;
+    width: 316px;
+    max-width: 316px;
+    min-width: 0;
+    padding-left: 28px;
   }
 }
 
 .card__info-wrapper-param {
+  margin-bottom: 15px;
+  position: relative;
+
   @media (min-width: $large-width) {
-    min-height: 141px;
+    min-height: 79px;
   }
 }
 
@@ -61,6 +73,8 @@
   font-size: 17px;
   line-height: 24px;
   color: $basic-black;
+  margin: 0;
+  margin-bottom: 4px;
 
   @media (min-width: $medium-width) {
     font-size: 20px;
@@ -72,6 +86,7 @@
   font-size: 13px;
   line-height: 30px;
   color: $text;
+  margin: 0;
 
   @media (min-width: $medium-width) {
     font-size: 15px;
@@ -83,14 +98,23 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  min-height: 73px;
+  min-height: 74px;
+  position: relative;
+
+  &::before {
+    @include pseudo();
+    @include size(100%, 1px);
+    background-color: $shadow-header;
+    top: 0;
+  }
 
   @media (min-width: $medium-width) {
     margin-top: auto;
+    min-height: 73px;
   }
 
   @media (min-width: $large-width) {
-    min-height: 73px;
+    min-height: 71px;
   }
 }
 

@@ -104,13 +104,13 @@
   padding-left: 24%;
 
   &:hover,
-  &:focus {
+  &:focus{
     opacity: 0.6;
     outline: none;
   }
 
-  &:hover .site-list__path,
-  &:focus .site-list__path {
+  &:hover .site-list__svg,
+  &:focus .site-list__svg {
     fill: $turquoise;
   }
 
@@ -118,7 +118,13 @@
     opacity: 0.3;
   }
 
-  &:active .site-list__path {
+  &:not([href]):hover,
+  &:not([href]):focus,
+  &:not([href]):active{
+    opacity: 1;
+  }
+
+  &:active .site-list__svg {
     fill: rgba($turquoise, 0.3);
   }
 
@@ -156,6 +162,6 @@
   }
 }
 
-.site-list__path {
+.site-list__svg {
   fill: rgba($basic-black, 0.2);
 }
