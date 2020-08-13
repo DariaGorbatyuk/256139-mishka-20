@@ -12,6 +12,10 @@
 .products__item {
   margin-bottom: 32px;
 
+  &:last-child{
+    margin-bottom: 0;
+  }
+
   @media (min-width: $medium-width) {
     margin-bottom: 54px;
   }

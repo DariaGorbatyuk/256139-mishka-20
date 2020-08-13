@@ -84,5 +84,17 @@
 }
 
 .page-main__products{
+  margin-bottom: 31px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 53px;
+
+    @media (min-width: $large-width) {
+      margin-bottom: 55px;
+    }
+  }
+}
+
+.page-main__process{
 
 }
