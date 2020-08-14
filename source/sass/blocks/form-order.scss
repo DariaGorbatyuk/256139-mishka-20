@@ -1,14 +1,30 @@
 .form-order__fieldset {
   border: 0;
+  margin-bottom: 31px;
+
+  &--color{
+    margin-bottom: 35px;
+  }
+
+  &--id{
+    margin-bottom: 35px;
+  }
+
+  &--contacts{
+    margin-bottom: 37px;
+  }
 }
 
 .form-order__fieldset-wrapper {
-  background-color: $gray;
+  @media (min-width: $medium-width){
+    background-color: $gray;
+  }
 }
 
 .form-order__list {
   padding: 0;
   list-style: none;
+  margin: 0;
 
   @media (min-width: $medium-width) {
     display: grid;
@@ -69,6 +85,37 @@
 }
 
 .form-order__item {
+
+  &--type{
+    padding-left: 58px;
+    margin-bottom: 6px;
+    padding-top: 7px;
+    min-height: 42px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &--color{
+    padding-left: 58px;
+    min-height: 40px;
+    margin-bottom: 21px;
+    padding-top: 8px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &--id{
+    margin-bottom: 15px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
   @media (min-width: $medium-width) {
     &--type {
       grid-column: 2/-1;
@@ -135,8 +182,11 @@
   line-height: 16px;
   color: $turquoise;
   text-transform: uppercase;
+  margin-bottom: 23px;
 
   &--contact {
+    margin-bottom: 0;
+
     @media (min-width: $small-width) {
       display: block;
       width: 100%;
@@ -149,6 +199,13 @@
 }
 
 .form-order__control {
+
+  .form-order__list--contacts &{
+    margin-bottom: 39px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
   &--text {
     border: 0;
     box-shadow: inset 0 -2px 0 $basic-black;
@@ -156,8 +213,14 @@
     font-size: 17px;
     line-height: 18px;
     color: $text;
+    height: 52px;
+    width: 100%;
+    padding-right: 10px;
   }
 
+  &--tel{
+    margin-bottom: 39px;
+  }
   &--textarea {
     border: 2px solid $text;
     box-shadow: none;
@@ -205,7 +268,6 @@
 .form-order__submit {
   @media (min-width: $medium-width) {
     order: -1;
-    width: 230px;
   }
 
   @media (min-width: $large-width) {

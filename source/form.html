@@ -49,21 +49,20 @@
     </ul>
   </nav>
 </header>
-<main class="page__page-main page-main">
-  <header class="page-main__main-header main-header page-main__main-header--other main-header--other">
-    <h1 class="main-header__heading container">Вязание на заказ</h1>
+<main class="page__main main">
+  <header class="main__header-other header-other header-other--form">
+    <h1 class="header-other__heading container">Вязание на заказ</h1>
   </header>
-  <p class="page-main__text container">
+  <p class="main__text container">
     Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
   </p>
-  <form class="page-main__form-order form-order" action="https://echo.htmlacademy.ru" method="post">
+  <form class="main__form-order form-order" action="https://echo.htmlacademy.ru" method="post">
     <fieldset class="form-order__fieldset container">
       <legend class="form-order__legend">Тип</legend>
       <ul class="form-order__list form-order__list--type">
         <li class="form-order__item form-order__item--type">
           <input class="form-order__control form-order__control--radio" type="radio" name="thing-type" id="thing-type-accessory" value="accessory" checked>
-          <label class="form-order__label form-order__label--radio" for="thing-type-accessory">Аксессуар для
-            интерьера</label>
+          <label class="form-order__label form-order__label--radio" for="thing-type-accessory">Аксессуар для интерьера</label>
         </li>
         <li class="form-order__item form-order__item--type">
           <input class="form-order__control form-order__control--radio" type="radio" name="thing-type" id="thing-type-toy" value="toy">
@@ -102,7 +101,7 @@
         </ul>
       </fieldset>
     </div>
-    <fieldset class="form-order__fieldset container">
+    <fieldset class="form-order__fieldset form-order__fieldset--id container">
       <legend class="form-order__legend">ФИО</legend>
       <ul class="form-order__list form-order__list--id">
         <li class="form-order__item form-order__item--id">
@@ -132,7 +131,7 @@
     </div>
     <div class="container">
       <div class="form-order__list form-order__list--add">
-        <label class="form-order__legend form-order__legend--contact" for="additional">Доп</label>
+        <label class="form-order__legend form-order__legend--add" for="additional">Доп</label>
         <textarea class="form-order__control form-order__control--text form-order__control--textarea" name="additional" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
     </div>

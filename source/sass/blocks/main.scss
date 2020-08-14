@@ -1,4 +1,4 @@
-.page-main__heading {
+.main__heading {
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-.page-main__text {
+.main__text {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
@@ -24,7 +24,7 @@
   }
 }
 
-.page-main__main-header {
+.main__main-header {
   margin-bottom: 31px;
 
   @media (min-width: $medium-width) {
@@ -34,20 +34,23 @@
   @media (min-width: $large-width) {
     margin-bottom: 73px;
   }
+}
 
-  &--other {
+.main__header-other {
+  margin-bottom: 31px;
 
-    @media (min-width: $medium-width) {
-      margin-bottom: 79px;
-    }
-    @media (min-width: $large-width) {
-      margin-bottom: 131px;
-    }
+  @media (min-width: $medium-width) {
+    margin-bottom: 79px;
+  }
+
+
+  @media (min-width: $large-width) {
+    margin-bottom: 131px;
   }
 }
 
 
-.page-main__week-product {
+.main__week-product {
   margin-bottom: 14px;
 
   @media (min-width: $medium-width) {
@@ -59,7 +62,7 @@
   }
 }
 
-.page-main__advantages {
+.main__advantages {
   margin-bottom: 57px;
 
   @media (min-width: $medium-width) {
@@ -71,7 +74,7 @@
   }
 }
 
-.page-main__reviews {
+.main__reviews {
   margin-bottom: 19px;
 
   @media (min-width: $medium-width) {
@@ -83,7 +86,7 @@
   }
 }
 
-.page-main__products{
+.main__products {
   margin-bottom: 31px;
 
   @media (min-width: $medium-width) {
@@ -95,6 +98,20 @@
   }
 }
 
-.page-main__process{
+.main__text {
+  margin: 0;
+  padding-right: 35px;
 
+  @media (min-width: $medium-width) {
+    padding-right: 100px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-right: 246px;
+    padding-left: 225px;
+  }
+}
+
+.main__form-order{
+  margin-top: 30px;
 }
