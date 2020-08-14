@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: 4fr 2fr;
     column-gap: 22px;
-    grid-template-rows: minmax(142px, min-content) min-content;
+    grid-template-rows: auto auto;
   }
 }
 
@@ -50,8 +50,9 @@
     font-size: 20px;
     padding-left: 54px;
     padding-right: 50px;
-    padding-top: 50px;
-    margin-top: 46px;
+    padding-top: 48px;
+    margin-top: 48px;
+    margin-bottom: 10px;
 
     &:before{
       left: 55px;
@@ -74,10 +75,12 @@
 
 .process__info {
   padding: 0 32px;
+  padding-bottom: 30px;
 
   @media (min-width: $medium-width) {
     padding-left: 40px;
     padding-right: 33px;
+    padding-bottom: 43px;
   }
 
   @media (min-width: $large-width) {
