@@ -2,21 +2,21 @@
   border: 0;
   margin-bottom: 31px;
 
-  &--color{
+  &--color {
     margin-bottom: 35px;
   }
 
-  &--id{
+  &--id {
     margin-bottom: 35px;
   }
 
-  &--contacts{
+  &--contacts {
     margin-bottom: 37px;
   }
 }
 
 .form-order__fieldset-wrapper {
-  @media (min-width: $medium-width){
+  @media (min-width: $medium-width) {
     background-color: $gray;
   }
 }
@@ -25,6 +25,10 @@
   padding: 0;
   list-style: none;
   margin: 0;
+
+  &--add {
+    margin-bottom: 9px;
+  }
 
   @media (min-width: $medium-width) {
     display: grid;
@@ -86,32 +90,32 @@
 
 .form-order__item {
 
-  &--type{
+  &--type {
     padding-left: 58px;
     margin-bottom: 6px;
     padding-top: 7px;
     min-height: 42px;
 
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
 
-  &--color{
+  &--color {
     padding-left: 58px;
     min-height: 40px;
     margin-bottom: 21px;
     padding-top: 8px;
 
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
 
-  &--id{
+  &--id {
     margin-bottom: 15px;
 
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -170,6 +174,55 @@
   font-size: 17px;
   line-height: 18px;
   color: $basic-black;
+  position: relative;
+
+  &--radio {
+    &:before {
+      @include pseudo();
+      @include size(40px, 40px);
+      border-radius: 50%;
+      border: 2px solid #444444;
+      left: -59px;
+      top: -7px;
+    }
+    .form-order__control:checked + &:after
+   {
+      @include pseudo();
+      @include size(15px, 15px);
+      border-radius: 50%;
+      background-color: $turquoise-darker;
+      top: 6px;
+      left: -47px;
+    }
+  }
+
+  &--color{
+    &:before {
+      @include pseudo();
+      @include size(38px, 39px);
+      border: 2px solid $text;
+      top: -8px;
+      left: -59px;
+    }
+    .form-order__control:checked +&:after{
+      @include pseudo();
+      @include size(21px, 16px);
+      background-image: url("../../img/icon-tick.svg");
+      background-size: 21px 16px;
+      background-repeat: no-repeat;
+      top: 4px;
+      left: -51px;
+    }
+  }
+
+  .form-order__item:hover &--radio,
+  .form-order__item:focus-within &--radio,
+  .form-order__item:hover &--color,
+  .form-order__item:focus-within &--color,{
+    &:before{
+      border-color: $turquoise-radio;
+    }
+  }
 
   @media (min-width: $medium-width) {
     font-size: 19px;
@@ -196,19 +249,25 @@
       grid-column: 1/span 1;
     }
   }
+
+  &--add {
+    display: block;
+  }
 }
 
 .form-order__control {
 
-  .form-order__list--contacts &{
+  .form-order__w-contact:last-of-type & {
     margin-bottom: 39px;
-    &:last-of-type{
+
+    &:last-of-type {
       margin-bottom: 0;
     }
   }
+
   &--text {
     border: 0;
-    box-shadow: inset 0 -2px 0 $basic-black;
+    border-bottom: 2px solid $basic-black;
     font-weight: normal;
     font-size: 17px;
     line-height: 18px;
@@ -216,17 +275,26 @@
     height: 52px;
     width: 100%;
     padding-right: 10px;
+    outline: none;
+
+    &:hover,
+    &:active{
+      outline: none;
+      border-color: $turquoise-radio;
+    }
   }
 
-  &--tel{
+  &--tel {
     margin-bottom: 39px;
   }
+
   &--textarea {
     border: 2px solid $text;
     box-shadow: none;
     font-family: $font;
-    font-weight: normal;
-    font-size: 17px;
+    padding: 16px;
+    min-height: 142px;
+    resize: none;
   }
 
   &::placeholder {
@@ -258,14 +326,38 @@
   }
 }
 
+.form-order__w-contact{
+  position: relative;
+}
+
+.form-order__icon{
+  position: absolute;
+  fill: rgba($basic-black, 0.2);
+  top: 29px;
+  right: 10px;
+
+  .form-order__control:hover + &,
+  .form-order__control:focus + &,
+  .form-order__control:active + &{
+    fill: $turquoise-radio;
+  }
+}
+
 .form-order__small {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: $text;
+  display: block;
+  margin-bottom: 30px;
 }
 
 .form-order__submit {
+  padding-bottom: 12px;
+  padding-top: 15px;
+  width: -webkit-fill-available;
+  display: block;
+
   @media (min-width: $medium-width) {
     order: -1;
   }
