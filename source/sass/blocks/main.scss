@@ -115,4 +115,8 @@
 
 .main__form-order{
   margin-top: 30px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 62px;
+  }
 }

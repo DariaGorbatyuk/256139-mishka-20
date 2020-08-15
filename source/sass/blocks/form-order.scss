@@ -2,16 +2,36 @@
   border: 0;
   margin-bottom: 31px;
 
+  @media (min-width: $medium-width) {
+    margin-bottom: 48px;
+  }
+
   &--color {
     margin-bottom: 35px;
+
+    @media (min-width: $medium-width) {
+      padding-top: 51px;
+      padding-bottom: 47px;
+      margin-bottom: 0;
+    }
   }
 
   &--id {
     margin-bottom: 35px;
+
+    @media (min-width: $medium-width) {
+      padding-top: 51px;
+      margin-bottom: 50px;
+    }
   }
 
   &--contacts {
     margin-bottom: 37px;
+
+    @media (min-width: $medium-width) {
+      padding-top: 49px;
+      padding-bottom: 50px;
+    }
   }
 }
 
@@ -35,26 +55,37 @@
 
     &--type {
       grid-template-columns: 1fr 3fr;
+      grid-template-rows: minmax(55px, auto);
+      row-gap: 20px;
+      grid-auto-rows: minmax(55px, auto);
     }
 
     &--color {
       grid-template-columns: 2fr 3fr 3fr;
+      grid-template-rows: minmax(53px, auto);
+      grid-auto-rows: minmax(53px, auto);
+      row-gap: 23px;
     }
 
     &--id {
       grid-template-columns: 1fr 3fr;
+      grid-template-rows: minmax(52px, auto);
+      grid-auto-rows: minmax(52px, auto);
+      row-gap: 24px;
     }
-
     &--contacts {
-      grid-template-columns: 1fr 3fr;
+      display: block;
     }
 
     &--add {
-      grid-template-columns: 1fr 3fr;
+      display: flex;
+      padding-top: 12px;
+      margin-bottom: 53px;
     }
 
     &--submit {
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -123,20 +154,32 @@
   @media (min-width: $medium-width) {
     &--type {
       grid-column: 2/-1;
+      padding-left: 78px;
+      margin-bottom: 0;
+      padding-top: 16px;
     }
 
     &--color {
+      margin-bottom: 0;
+      padding-top: 13px;
+
+
       &:nth-child(odd) {
         grid-column: 2/span 1;
+        padding-left: 79px;
       }
 
       &:nth-child(even) {
         grid-column: 3/span 1;
+        padding-left: 90px;
       }
     }
 
     &--id {
       grid-column: 2/-1;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -184,27 +227,46 @@
       border: 2px solid #444444;
       left: -59px;
       top: -7px;
+
+      @media (min-width: $medium-width) {
+        @include size(53px, 52px);
+        left: -81px;
+        top: -14px;
+      }
     }
-    .form-order__control:checked + &:after
-   {
+
+    .form-order__control:checked + &:after {
       @include pseudo();
       @include size(15px, 15px);
       border-radius: 50%;
       background-color: $turquoise-darker;
       top: 6px;
       left: -47px;
+
+      @media (min-width: $medium-width) {
+        @include size(21px, 21px);
+        top: 2px;
+        left: -64px;
+      }
     }
   }
 
-  &--color{
+  &--color {
     &:before {
       @include pseudo();
       @include size(38px, 39px);
       border: 2px solid $text;
       top: -8px;
       left: -59px;
+
+      @media (min-width: $medium-width) {
+        @include size(54px, 51px);
+        top: -11px;
+        left: -81px;
+      }
     }
-    .form-order__control:checked +&:after{
+
+    .form-order__control:checked + &:after {
       @include pseudo();
       @include size(21px, 16px);
       background-image: url("../../img/icon-tick.svg");
@@ -212,20 +274,30 @@
       background-repeat: no-repeat;
       top: 4px;
       left: -51px;
+
+      @media (min-width: $medium-width) {
+        transform: scale(1.5);
+        top: 6px;
+        left: -63px;
+      }
     }
   }
 
   .form-order__item:hover &--radio,
   .form-order__item:focus-within &--radio,
   .form-order__item:hover &--color,
-  .form-order__item:focus-within &--color,{
-    &:before{
+  .form-order__item:focus-within &--color, {
+    &:before {
       border-color: $turquoise-radio;
     }
   }
 
   @media (min-width: $medium-width) {
     font-size: 19px;
+
+    &--text {
+      padding-right: 22px;
+    }
   }
 }
 
@@ -239,11 +311,8 @@
 
   &--contact {
     margin-bottom: 0;
-
-    @media (min-width: $small-width) {
-      display: block;
-      width: 100%;
-    }
+    display: block;
+    width: 100%;
 
     @media (min-width: $large-width) {
       grid-column: 1/span 1;
@@ -253,18 +322,30 @@
   &--add {
     display: block;
   }
+
+  @media (min-width: $medium-width) {
+    position: absolute;
+    top: 19px;
+
+    &--color {
+      top: 67px;
+    }
+    &--id{
+      top: 69px;
+    }
+    &--contact {
+      position: static;
+      width: 33%;
+    }
+    &--add {
+      position: static;
+      margin-top: 20px;
+      width: 34%;
+    }
+  }
 }
 
 .form-order__control {
-
-  .form-order__w-contact:last-of-type & {
-    margin-bottom: 39px;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-
   &--text {
     border: 0;
     border-bottom: 2px solid $basic-black;
@@ -278,14 +359,10 @@
     outline: none;
 
     &:hover,
-    &:active{
+    &:active {
       outline: none;
       border-color: $turquoise-radio;
     }
-  }
-
-  &--tel {
-    margin-bottom: 39px;
   }
 
   &--textarea {
@@ -302,6 +379,8 @@
     font-size: 17px;
     line-height: 18px;
     color: rgba($basic-black, 0.3);
+    font-family: $font;
+    letter-spacing: 0.1px;
   }
 
   @media (min-width: $medium-width) {
@@ -312,6 +391,11 @@
 
     &--text {
       font-size: 19px;
+      flex-grow: 2;
+      padding-left: 19px;
+    }
+    &--textarea {
+      padding: 16px;
     }
 
     &::placeholder {
@@ -326,20 +410,36 @@
   }
 }
 
-.form-order__w-contact{
+.form-order__w-contact {
   position: relative;
+  margin-bottom: 39px;
+
+  @media (min-width: $medium-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
-.form-order__icon{
+.form-order__icon {
   position: absolute;
   fill: rgba($basic-black, 0.2);
-  top: 29px;
+  bottom: 11px;
   right: 10px;
 
   .form-order__control:hover + &,
   .form-order__control:focus + &,
-  .form-order__control:active + &{
+  .form-order__control:active + & {
     fill: $turquoise-radio;
+  }
+
+  @media (min-width: $medium-width) {
+    right: 26px;
+    bottom: 12px;
   }
 }
 
@@ -350,16 +450,25 @@
   color: $text;
   display: block;
   margin-bottom: 30px;
+
+  @media (min-width: $medium-width){
+    align-self: center;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .form-order__submit {
   padding-bottom: 12px;
   padding-top: 15px;
   width: -webkit-fill-available;
-  display: block;
 
   @media (min-width: $medium-width) {
     order: -1;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $large-width) {

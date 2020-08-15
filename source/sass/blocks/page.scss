@@ -29,4 +29,10 @@
   @media (min-width: $large-width) {
     margin-bottom: 105px;
   }
+
+  &--form{
+    @media (min-width: $medium-width) {
+      margin-bottom: 52px
+    }
+  }
 }
