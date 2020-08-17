@@ -34,5 +34,9 @@
     @media (min-width: $medium-width) {
       margin-bottom: 52px
     }
+
+    @media (min-width: $large-width) {
+      margin-bottom: 50px;
+    }
   }
 }
