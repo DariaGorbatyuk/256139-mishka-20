@@ -5,12 +5,13 @@
   background-size: auto;
   background-color: $main-header;
   position: relative;
-  padding-top: 158px;
+  padding-top: 73px;
 
   @media (min-width: $medium-width) {
     background-image: url("../img/hero-tablet@1x.jpg");
     margin-top: -62px; /*MISTAKE*/
     position: relative;
+    padding-top: 158px;
 
     &::after {
       @include pseudo();
@@ -35,28 +36,24 @@
   color: $black-header;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 121px;
 
   @media (min-width: $medium-width) {
     font-size: 43px;
     line-height: 50px;
-    padding: 0 160px;
+    padding: 0 126px;
+    margin-bottom: 371px;
   }
 
   @media (min-width: $large-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 354px;
+    padding: 0 165px;
   }
 }
 
 .main-header__categories-list {
-  margin-top: 121px;
-
-  @media (min-width: $medium-width) {
-    margin-top: 321px;
-  }
-
-  @media (min-width: $large-width) {
-    margin-top: 354px;
-  }
+  margin-top: 0;
+  margin-bottom: 0;
 }

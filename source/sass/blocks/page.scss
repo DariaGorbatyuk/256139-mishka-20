@@ -19,13 +19,13 @@
 }
 
 .page__main{
-  margin-bottom: 59px;
-
-  @media (min-width: $medium-width) {
-    margin-bottom: 63px;
+  &--index{
+    margin-bottom: 39px;
   }
 
-
+  @media (min-width: $medium-width) {
+    margin-bottom: 55px;
+  }
   @media (min-width: $large-width) {
     margin-bottom: 105px;
   }
