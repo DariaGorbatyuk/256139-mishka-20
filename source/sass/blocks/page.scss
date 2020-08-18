@@ -30,6 +30,18 @@
     margin-bottom: 105px;
   }
 
+  &--catalog{
+    margin-bottom: 59px;
+
+    @media (min-width: $medium-width) {
+      margin-bottom: 63px
+    }
+
+    @media (min-width: $large-width) {
+      margin-bottom: 106px
+    }
+  }
+
   &--form{
     @media (min-width: $medium-width) {
       margin-bottom: 52px
