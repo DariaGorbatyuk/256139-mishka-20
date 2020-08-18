@@ -57,7 +57,7 @@
   &--eco {
     &::before {
       @include size(32px, 37px);
-      background-image: url("../../img/icon-feature-flower.svg");
+      background-image: url("../img/icon-feature-flower.svg");
       left: 7px;
     }
   }
@@ -65,14 +65,14 @@
   &--price {
     &::before {
       @include size(47px, 27px);
-      background-image: url("../../img/icon-feature-money.svg");
+      background-image: url("../img/icon-feature-money.svg");
     }
   }
 
   &--like {
     &::before {
       @include size(34px, 27px);
-      background-image: url("../../img/icon-feature-heart.svg");
+      background-image: url("../img/icon-feature-heart.svg");
       left: 7px;
     }
   }
@@ -80,21 +80,21 @@
   &--knit {
     &::before {
       @include size(35px, 34px);
-      background-image: url("../../img/icon-feature-ball.svg");
+      background-image: url("../img/icon-feature-ball.svg");
     }
   }
 
   &--support {
     &::before {
       @include size(55px, 23px);
-      background-image: url("../../img/icon-feature-rocket.svg");
+      background-image: url("../img/icon-feature-rocket.svg");
     }
   }
 
   &--present {
     &::before {
       @include size(33px, 32px);
-      background-image: url("../../img/icon-feature-gift.svg");
+      background-image: url("../img/icon-feature-gift.svg");
     }
   }
 
