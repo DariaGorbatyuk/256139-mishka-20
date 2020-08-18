@@ -18,8 +18,8 @@
   grid-template-rows: min-content 1fr min-content;
 }
 
-.page__main{
-  &--index{
+.page__main {
+  &--index {
     margin-bottom: 39px;
   }
 
@@ -30,7 +30,7 @@
     margin-bottom: 105px;
   }
 
-  &--catalog{
+  &--catalog {
     margin-bottom: 59px;
 
     @media (min-width: $medium-width) {
@@ -42,7 +42,7 @@
     }
   }
 
-  &--form{
+  &--form {
     margin-bottom: 56px;
 
     @media (min-width: $medium-width) {
