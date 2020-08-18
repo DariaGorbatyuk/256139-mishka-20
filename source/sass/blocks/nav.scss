@@ -70,8 +70,14 @@
   }
 
   &--no-js {
+    padding-bottom: 0;
+
     .nav__site-list {
-      display: grid;
+      margin-top: 20px;
+
+      @media (min-width: $medium-width) {
+        margin-top: 0;
+      }
     }
 
     .nav__toggle {

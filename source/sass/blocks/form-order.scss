@@ -230,9 +230,14 @@
 
   &--color {
     display: block;
-    padding-left: 79px;
     padding-top: 12px;
-    padding-bottom: 21px;
+    padding-left: 61px;
+    padding-bottom: 9px;
+
+    @media (min-width: $medium-width) {
+      padding-left: 79px;
+      padding-bottom: 21px;
+    }
 
     &:before {
       @include pseudo();
