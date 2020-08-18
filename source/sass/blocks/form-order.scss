@@ -498,7 +498,7 @@
 .form-order__submit {
   padding-bottom: 12px;
   padding-top: 15px;
-  width: -webkit-fill-available;
+  width: 100%;
 
   @media (min-width: $medium-width) {
     order: -1;
