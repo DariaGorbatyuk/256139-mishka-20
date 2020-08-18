@@ -25,7 +25,7 @@
   margin-top: 22px;
   position: relative;
 
-  &:before{
+  &::before {
     @include pseudo();
     @include size(32px, 22px);
     background-image: url("../../img/icon-video.svg");
@@ -39,7 +39,7 @@
     font-size: 20px;
     padding-left: 106px;
 
-    &:before{
+    &::before {
       left: 41px;
       top: -2px;
     }
@@ -54,7 +54,7 @@
     margin-top: 48px;
     margin-bottom: 10px;
 
-    &:before{
+    &::before {
       left: 55px;
       top: 0;
     }
@@ -67,10 +67,10 @@
   @media (min-width: $medium-width) {
     margin-bottom: 19px;
   }
+
   @media (min-width: $large-width) {
     margin-bottom: 0;
   }
-
 }
 
 .process__info {
@@ -103,12 +103,13 @@
     line-height: 30px;
     margin-bottom: 39px;
   }
+
   @media (min-width: $large-width) {
     margin-bottom: 53px;
   }
 }
 
-.process__btn{
+.process__btn {
   font-size: 18px;
   padding-top: 14px;
   padding-bottom: 15px;
@@ -116,7 +117,8 @@
   @media (min-width: $medium-width) {
     margin-right: 7px;
   }
+
   @media (min-width: $large-width) {
-    margin-right: 0;;
+    margin-right: 0;
   }
 }

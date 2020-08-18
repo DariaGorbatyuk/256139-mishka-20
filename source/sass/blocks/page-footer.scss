@@ -2,7 +2,7 @@
   background-color: $gray;
 }
 
-.page-footer__wrapper{
+.page-footer__wrapper {
   padding-top: 30px;
 
   @media (min-width: $medium-width) {
@@ -24,15 +24,15 @@
   }
 }
 
-.page-footer__logo-img{
+.page-footer__logo-img {
   fill: $basic-black;
 
   &:hover,
-  &:focus{
+  &:focus {
     fill: $turquoise-darker-active;
   }
 
-  &:active{
-    fill: rgba($turquoise-darker-active, 0.3)
+  &:active {
+    fill: rgba($turquoise-darker-active, 0.3);
   }
 }

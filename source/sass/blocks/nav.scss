@@ -13,7 +13,6 @@
   }
 
   &--closed {
-
     .nav__site-list {
       display: none;
 
@@ -22,15 +21,14 @@
       }
     }
 
-    .nav__toggle:before {
+    .nav__toggle::before {
       @include pseudo();
       width: 20px;
       height: 2px;
       background-color: $cart;
       top: 0;
       left: 6px;
-      box-shadow: 0 6px,
-      0 12px;
+      box-shadow: 0 6px, 0 12px;
     }
   }
 
@@ -51,22 +49,21 @@
       }
     }
 
-    .nav__toggle:before,
-    .nav__toggle:after {
+    .nav__toggle::before,
+    .nav__toggle::after {
       @include pseudo();
       width: 26px;
       height: 2px;
       background-color: $basic-black;
     }
 
-    .nav__toggle:before {
+    .nav__toggle::before {
       transform: rotate(45deg);
     }
 
-    .nav__toggle:after {
+    .nav__toggle::after {
       transform: rotate(-45deg);
     }
-
   }
 
   &--no-js {

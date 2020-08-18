@@ -12,15 +12,19 @@
   font-size: 13px;
   line-height: 24px;
   color: $text;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 35px;
 
   @media (min-width: $medium-width) {
     font-size: 17px;
     line-height: 30px;
+    padding-right: 100px;
   }
 
   @media (min-width: $large-width) {
-    padding-left: 174px;
-    padding-right: 256px;
+    padding-right: 246px;
+    padding-left: 225px;
   }
 }
 
@@ -98,22 +102,7 @@
   }
 }
 
-.main__text {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-right: 35px;
-
-  @media (min-width: $medium-width) {
-    padding-right: 100px;
-  }
-
-  @media (min-width: $large-width) {
-    padding-right: 246px;
-    padding-left: 225px;
-  }
-}
-
-.main__form-order{
+.main__form-order {
   margin-top: 30px;
 
   @media (min-width: $medium-width) {

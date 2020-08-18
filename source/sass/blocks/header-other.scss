@@ -25,14 +25,14 @@
     padding-bottom: 93px;
   }
 
-  &--form{
+  &--form {
     margin-bottom: 18px;
 
-    @media (min-width: $medium-width){
+    @media (min-width: $medium-width) {
       margin-bottom: 67px;
     }
 
-    @media (min-width: $large-width){
+    @media (min-width: $large-width) {
       margin-bottom: 119px;
     }
   }

@@ -90,6 +90,7 @@
     &--color {
       margin-left: 16.8%;
     }
+
     &--id {
       margin-left: 16.8%;
       margin-right: 16.8%;
@@ -99,6 +100,7 @@
       margin-right: 17%;
       margin-left: 6%;
     }
+
     &--add {
       margin-bottom: 50px;
     }
@@ -110,7 +112,6 @@
 }
 
 .form-order__item {
-
   &--type {
     margin-bottom: 14px;
     min-height: 42px;
@@ -146,10 +147,12 @@
     &--color {
       min-height: 52px;
       margin-bottom: 24px;
+
       @media (min-width: $medium-width) and (max-width: $large-width-min) {
         &:nth-child(odd) {
           flex-basis: 52%;
         }
+
         &:nth-child(even) {
           flex-basis: 48%;
         }
@@ -166,7 +169,6 @@
   }
 
   @media (min-width: $large-width) {
-
     &--color {
       flex-basis: 262px;
     }
@@ -174,8 +176,6 @@
     &--id {
       grid-column: 2/-2;
     }
-
-
   }
 }
 
@@ -197,7 +197,7 @@
       padding-bottom: 18px;
     }
 
-    &:before {
+    &::before {
       @include pseudo();
       @include size(40px, 40px);
       border-radius: 50%;
@@ -212,7 +212,7 @@
       }
     }
 
-    .form-order__control:checked + &:after {
+    .form-order__control:checked + &::after {
       @include pseudo();
       @include size(15px, 15px);
       border-radius: 50%;
@@ -239,7 +239,7 @@
       padding-bottom: 21px;
     }
 
-    &:before {
+    &::before {
       @include pseudo();
       @include size(38px, 39px);
       border: 2px solid $text;
@@ -253,7 +253,7 @@
       }
     }
 
-    .form-order__control:checked + &:after {
+    .form-order__control:checked + &::after {
       @include pseudo();
       @include size(21px, 16px);
       background-image: url("../../img/icon-tick.svg");
@@ -274,7 +274,7 @@
   .form-order__item:focus-within &--radio,
   .form-order__item:hover &--color,
   .form-order__item:focus-within &--color, {
-    &:before {
+    &::before {
       border-color: $turquoise-radio;
     }
   }
@@ -286,6 +286,7 @@
       padding-right: 22px;
     }
   }
+
   @media (min-width: $large-width) {
     &--color {
       padding-top: 16px;
@@ -326,30 +327,35 @@
     &--color {
       top: 67px;
     }
+
     &--id {
       top: 69px;
     }
+
     &--contact {
       position: static;
       width: 33%;
     }
+
     &--add {
       position: static;
       margin-top: 20px;
       width: 34%;
     }
   }
-  @media (min-width: $large-width) {
 
+  @media (min-width: $large-width) {
     &--type {
       top: 19px;
       left: 109px;
     }
+
     &--color {
       top: 67px;
       left: 109px;
     }
-    &--id{
+
+    &--id {
       left: 109px;
     }
 
@@ -414,6 +420,7 @@
       flex-grow: 2;
       padding-left: 19px;
     }
+
     &--textarea {
       padding: 16px;
     }

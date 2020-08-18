@@ -2,9 +2,9 @@
   padding-bottom: 24px;
   position: relative;
 
-  &::after{
+  &::after {
     @include pseudo();
-    @include size(100% , 1px);
+    @include size(100%, 1px);
     background-color: $footer-line;
     bottom: 0;
   }
@@ -14,7 +14,7 @@
     flex-basis: 45%;
     max-width: 45%;
 
-    &::after{
+    &::after {
       display: none;
     }
   }
@@ -41,7 +41,7 @@
   @media (min-width: $medium-width) {
     margin-right: 38px;
 
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }
@@ -62,6 +62,7 @@
 
   &--fb::after {
     background-image: url("../img/icon-fb.svg");
+
     @include size(22px, 28px);
   }
 

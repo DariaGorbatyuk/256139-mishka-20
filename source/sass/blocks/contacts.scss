@@ -23,7 +23,7 @@
     margin-bottom: 52px;
     margin-right: 50px;
 
-    &:after {
+    &::after {
       @include pseudo();
       @include size(47px, 81px);
       background-image: url("../img/icon-flag.svg");
@@ -41,7 +41,7 @@
     margin: 0;
     align-self: end;
 
-    &:after{
+    &::after {
       top: -19px;
       left: -112px;
     }
@@ -182,6 +182,5 @@
     margin: 0;
     align-self: end;
     margin-left: 0;
-
   }
 }

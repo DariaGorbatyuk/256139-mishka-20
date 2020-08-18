@@ -77,22 +77,22 @@
     }
   }
 
-  &--knit{
-    &::before{
+  &--knit {
+    &::before {
       @include size(35px, 34px);
       background-image: url("../../img/icon-feature-ball.svg");
     }
   }
 
-  &--support{
-    &::before{
+  &--support {
+    &::before {
       @include size(55px, 23px);
       background-image: url("../../img/icon-feature-rocket.svg");
     }
   }
 
-  &--present{
-    &::before{
+  &--present {
+    &::before {
       @include size(33px, 32px);
       background-image: url("../../img/icon-feature-gift.svg");
     }
