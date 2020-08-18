@@ -256,7 +256,7 @@
     .form-order__control:checked + &::after {
       @include pseudo();
       @include size(21px, 16px);
-      background-image: url("../../img/icon-tick.svg");
+      background-image: url("../img/icon-tick.svg");
       background-size: 21px 16px;
       background-repeat: no-repeat;
       top: 10px;
