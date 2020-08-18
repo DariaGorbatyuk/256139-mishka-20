@@ -70,7 +70,6 @@
     &:nth-last-child(3) {
       display: block;
     }
-
     &:nth-last-child(2) {
       margin-left: 36px;
     }
@@ -106,8 +105,12 @@
 
   &:hover,
   &:focus {
-    opacity: 0.6;
     outline: none;
+  }
+
+  &:hover .site-list__item-text,
+  &:focus .site-list__item-text{
+    opacity: 0.6;
   }
 
   &:hover .site-list__svg,
