@@ -152,9 +152,8 @@
 }
 
 .contacts__map {
-  margin-bottom: 42px;
   width: 100%;
-  height: auto;
+  margin-bottom: 42px;
 
   @media (min-width: $medium-width) {
     margin-bottom: 56px;
@@ -181,6 +180,5 @@
     grid-column: 2/span 1;
     margin: 0;
     align-self: end;
-    margin-left: 0;
   }
 }
