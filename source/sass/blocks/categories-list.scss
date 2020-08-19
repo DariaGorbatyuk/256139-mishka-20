@@ -42,7 +42,7 @@
     outline: none;
     cursor: pointer;
 
-    @media (min-width: $medium-width){
+    @media (min-width: $medium-width) {
       transform: scale(1, 1.05);
     }
 
@@ -52,10 +52,10 @@
   }
 
   &:active {
-
-    @media (min-width: $medium-width){
+    @media (min-width: $medium-width) {
       transform: scale(1, 1.05);
     }
+
     &::after {
       opacity: 0.3;
     }
