@@ -28,7 +28,7 @@
   &::before {
     @include pseudo();
     @include size(32px, 22px);
-    background-image: url("../../img/icon-video.svg");
+    background-image: url("../img/icon-video.svg");
     background-size: 32px 22px;
     background-repeat: no-repeat;
     left: 33px;
