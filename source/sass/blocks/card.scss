@@ -139,8 +139,5 @@
 
 .card__basket {
   @include size(21px, 19px);
-}
-
-.card__basket-path {
-  fill: $cart;
+  fill: rgba($basic-black, 0.2)
 }
