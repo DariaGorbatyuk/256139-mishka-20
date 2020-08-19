@@ -103,6 +103,7 @@
     line-height: 22px;
     padding-top: 97px;
     padding-bottom: 14px;
+    padding-right: 20px;
 
     &::before {
       top: 45px;
@@ -110,6 +111,8 @@
   }
 
   @media (min-width: $large-width) {
+    padding-right: 0;
+
     &:nth-child(1),
     &:nth-child(2),
     &:nth-child(3) {
