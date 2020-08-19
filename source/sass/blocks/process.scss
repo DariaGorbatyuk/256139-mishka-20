@@ -13,6 +13,11 @@
     column-gap: 22px;
     grid-template-rows: auto auto;
   }
+
+  &:hover,
+  &:focus-within{
+    box-shadow: 0 6px 10px rgba($basic-black, 0.1);
+  }
 }
 
 .process__heading {

@@ -13,9 +13,18 @@
     flex-direction: column;
     width: 316px;
   }
+
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 6px 10px rgba($basic-black, 0.1);
+  }
 }
 
 .card__link-img {
+  &:focus {
+    outline: none;
+  }
+
   @media (min-width: $medium-width) {
     width: 50%;
   }
@@ -67,10 +76,6 @@
   }
 }
 
-.card__link-heading {
-  text-decoration: none;
-}
-
 .card__heading {
   font-weight: bold;
   font-size: 17px;
@@ -81,6 +86,23 @@
 
   @media (min-width: $medium-width) {
     font-size: 20px;
+  }
+}
+
+.card__link-heading {
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .card__heading,
+  &:focus .card__heading {
+    color: rgba($basic-black, 0.6);
+  }
+
+  &:active .card__heading {
+    color: rgba($basic-black, 0.3);
   }
 }
 
@@ -133,11 +155,29 @@
   }
 }
 
-.card__btn {
-  max-height: 19px;
-}
-
 .card__basket {
   @include size(21px, 19px);
-  fill: rgba($basic-black, 0.2)
+  fill: rgba($basic-black, 0.2);
+
+  &:hover {
+    fill: $turquoise;
+  }
+}
+
+
+.card__btn {
+  max-height: 19px;
+
+  &:focus {
+    outline: none;
+
+    & .card__basket {
+
+      fill: $turquoise;
+    }
+  }
+
+  &:active .card__basket {
+    fill: rgba($turquoise, 0.3);
+  }
 }
