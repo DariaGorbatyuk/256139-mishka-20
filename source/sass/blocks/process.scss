@@ -38,6 +38,7 @@
   @media (min-width: $medium-width) {
     font-size: 20px;
     padding-left: 106px;
+    margin-bottom: 22px;
 
     &::before {
       left: 41px;
@@ -62,7 +63,7 @@
 }
 
 .process__video {
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 
   @media (min-width: $medium-width) {
     margin-bottom: 19px;
