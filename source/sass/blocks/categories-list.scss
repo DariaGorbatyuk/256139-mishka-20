@@ -26,6 +26,14 @@
     right: 36px;
     top: 24px;
     opacity: 0.5;
+
+    @media (min-width: $medium-width) {
+      top: 30px;
+    }
+
+    @media (min-width: $large-width) {
+      top: 31px;
+    }
   }
 
   &:hover,
@@ -53,6 +61,16 @@
       background-image: url("../img/icon-toy.svg");
       right: 27px;
       top: 20px;
+
+      @media (min-width: $medium-width) {
+        top: 33px;
+        right: 32px;
+      }
+
+      @media (min-width: $large-width) {
+        top: 33px;
+        right: 35px;
+      }
     }
 
     &:hover,
