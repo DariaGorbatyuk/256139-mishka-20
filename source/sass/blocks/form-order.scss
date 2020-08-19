@@ -7,7 +7,7 @@
   }
 
   &--color {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 
     @media (min-width: $medium-width) {
       padding-top: 51px;
@@ -137,7 +137,7 @@
   }
 
   &--id {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 
     &:last-child {
       margin-bottom: 0;
@@ -309,24 +309,34 @@
   text-transform: uppercase;
   margin-bottom: 23px;
   margin-top: 0;
+  padding-right: 200px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::after{
+    @include pseudo();
+    @include size(200px, 1px);
+    background-color: $turquoise-radio;
+    right: 0;
+  }
 
   &--contact {
     margin-bottom: 0;
-    display: block;
-    width: 100%;
-  }
-
-  &--add {
-    display: block;
   }
 
   @media (min-width: $medium-width) {
+    display: block;
     margin: 0;
     flex-basis: 25%;
     max-width: 25%;
     min-width: 0;
     word-break: break-word;
     padding-right: 10px;
+
+    &::after{
+      display: none;
+    }
 
     &--type {
       margin-top: 18px;
