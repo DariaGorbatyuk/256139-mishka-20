@@ -24,18 +24,6 @@
     padding-top: 102px;
     padding-bottom: 93px;
   }
-
-  &--form {
-    margin-bottom: 18px;
-
-    @media (min-width: $medium-width) {
-      margin-bottom: 67px;
-    }
-
-    @media (min-width: $large-width) {
-      margin-bottom: 119px;
-    }
-  }
 }
 
 .header-other__heading {

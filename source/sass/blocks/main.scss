@@ -53,6 +53,18 @@
   @media (min-width: $large-width) {
     margin-bottom: 131px;
   }
+
+  &--form {
+    margin-bottom: 16px;
+
+    @media (min-width: $medium-width) {
+      margin-bottom: 64px;
+    }
+
+    @media (min-width: $large-width) {
+      margin-bottom: 119px;
+    }
+  }
 }
 
 
