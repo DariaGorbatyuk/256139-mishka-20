@@ -6,12 +6,12 @@
   background-color: $main-header;
   position: relative;
   padding-top: 73px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 
   @media (min-width: $medium-width) {
     background-image: url("../img/hero-tablet@1x.jpg");
-    margin-top: -62px; /*MISTAKE*/
     position: relative;
-    padding-top: 158px;
+    padding-top: 156px;
 
     &::after {
       @include pseudo();
