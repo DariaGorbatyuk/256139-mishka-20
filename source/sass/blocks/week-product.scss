@@ -149,7 +149,7 @@
   }
 }
 
-.week-product__img {
+.week-product__picture{
   margin-bottom: 26px;
 
   @media (min-width: $medium-width) {
@@ -165,6 +165,14 @@
     position: relative;
     z-index: -1;
     margin-top: 0;
+  }
+}
+
+.week-product__img{
+  margin: 0 auto;
+
+  @media (min-width: $medium-width) {
+    margin-right: 0;
   }
 }
 
