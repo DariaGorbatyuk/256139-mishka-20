@@ -1,0 +1,125 @@
+.main__heading {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  color: $basic-black;
+  background-color: $gray;
+  text-align: center;
+}
+
+.main__text {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: $text;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 35px;
+
+  @media (min-width: $medium-width) {
+    font-size: 17px;
+    line-height: 30px;
+    padding-right: 100px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-right: 246px;
+    padding-left: 225px;
+  }
+}
+
+.main__main-header {
+  margin-bottom: 31px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 54px;
+    margin-top: -64px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 73px;
+  }
+}
+
+.main__header-other {
+  margin-bottom: 29px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 76px;
+    margin-top: -64px;
+  }
+
+
+  @media (min-width: $large-width) {
+    margin-bottom: 131px;
+  }
+
+  &--form {
+    margin-bottom: 16px;
+
+    @media (min-width: $medium-width) {
+      margin-bottom: 64px;
+    }
+
+    @media (min-width: $large-width) {
+      margin-bottom: 119px;
+    }
+  }
+}
+
+
+.main__week-product {
+  margin-bottom: 14px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.main__advantages {
+  margin-bottom: 57px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 73px;
+  }
+}
+
+.main__reviews {
+  margin-bottom: 19px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.main__products {
+  margin-bottom: 31px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 53px;
+
+    @media (min-width: $large-width) {
+      margin-bottom: 55px;
+    }
+  }
+}
+
+.main__form-order {
+  margin-top: 30px;
+
+  @media (min-width: $medium-width) {
+    margin-top: 62px;
+  }
+}

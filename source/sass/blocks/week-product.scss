@@ -1,16 +1,28 @@
 .week-product {
   background-color: inherit;
   display: grid;
+  padding-bottom: 60px;
+
+  &::after {
+    @include pseudo();
+    @include size(100%, 23px);
+    background-image: url("../img/bg-zigzag-line.svg");
+    bottom: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $medium-width) {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: min-content 40px repeat(4, min-content);
+    grid-template-rows: min-content 31px repeat(4, min-content);
     grid-auto-rows: min-content;
+    padding-bottom: 76px;
   }
 
   @media (min-width: $large-width) {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, min-content);
+    padding-bottom: 98px;
   }
 }
 
@@ -20,6 +32,7 @@
   line-height: 30px;
   color: $basic-black;
   margin: 0;
+  margin-bottom: 5px;
 
   @media (min-width: $medium-width) {
     font-size: 43px;
@@ -34,6 +47,8 @@
     grid-row: 1 /span 1;
     white-space: pre;
     position: relative;
+    margin-top: 61px;
+    margin-bottom: 35px;
   }
 }
 
@@ -44,17 +59,23 @@
   color: $turquoise;
   margin: 0;
   text-transform: uppercase;
+  margin-bottom: 19px;
 
   @media (min-width: $medium-width) {
-    align-self: end;
     width: 100px;
     justify-self: end;
+    text-align: center;
+    margin-right: 15px;
+    margin-top: 4px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $large-width) {
     grid-column: 1/ span 1;
     grid-row: 1 /span 1;
     width: 100px;
+    justify-self: center;
+    margin-top: 69px;
   }
 }
 
@@ -63,17 +84,22 @@
   font-size: 15px;
   line-height: 24px;
   color: $text;
+  margin: 0;
+  margin-bottom: 22px;
 
   @media (min-width: $medium-width) {
     grid-column: 1/span 2;
     grid-row: 3/span 1;
     margin-right: 42px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   @media (min-width: $large-width) {
     grid-column: 2/ span 2;
     grid-row: 2 /span 1;
-    margin-right: 33%;
+    margin-right: 50px;
+    margin-bottom: 35px;
   }
 }
 
@@ -82,17 +108,20 @@
   font-size: 15px;
   line-height: 20px;
   color: $text;
+  margin: 0;
+  margin-bottom: 27px;
+
 
   @media (min-width: $medium-width) {
     grid-column: 1/span 2;
     grid-row: 4/span 1;
     margin-right: 42px;
+    margin-top: 18px;
   }
 
   @media (min-width: $large-width) {
     grid-column: 2/ span 2;
     grid-row: 3 /span 1;
-    margin-right: 33%;
   }
 }
 
@@ -101,21 +130,35 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding-bottom: 12px;
+  padding-top: 7px;
 }
 
 .week-product__description-term {
-  min-width: 33.3%;
+  min-width: 38%;
+
+  @media (min-width: $medium-width) {
+    min-width: 33%;
+  }
 }
 
 .week-product__description-value {
   margin: 0;
-  min-width: 66.6%;
+  min-width: 62%;
+
+  @media (min-width: $medium-width) {
+    min-width: 66%;
+  }
 }
 
-.week-product__img {
+.week-product__picture {
+  margin-bottom: 26px;
+
   @media (min-width: $medium-width) {
     grid-column: 3/span 2;
     grid-row: 3/span 4;
+    margin-bottom: 0;
+    margin-top: 12px;
   }
 
   @media (min-width: $large-width) {
@@ -123,30 +166,52 @@
     grid-row: 1 /-1;
     position: relative;
     z-index: -1;
+    margin-top: 0;
   }
 }
+
+.week-product__img {
+  margin: 0 auto;
+
+  @media (min-width: $medium-width) {
+    margin-right: 0;
+  }
+}
+
 
 .week-product__price {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $text;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 23px;
 
   @media (min-width: $medium-width) {
     grid-column: 1/span 2;
     grid-row: 5/span 1;
     text-align: center;
     margin-right: 42px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 31px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $large-width) {
     grid-column: 2/ span 2;
     grid-row: 4 /span 1;
-    margin-right: 33%;
+    text-align: center;
+    margin-right: 59px;
+    margin-top: 85px;
   }
 }
 
 .week-product__btn {
+  padding-top: 15px;
+  padding-bottom: 13px;
+
   @media (min-width: $medium-width) {
     grid-column: 1/span 2;
     grid-row: 6/span 1;
@@ -156,6 +221,7 @@
   @media (min-width: $large-width) {
     grid-column: 2/ span 2;
     grid-row: 5 /span 1;
-    margin-right: 33%;
+    margin-right: 58px;
+    margin-bottom: 0;
   }
 }

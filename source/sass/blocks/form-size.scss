@@ -1,6 +1,8 @@
 .form-size__fieldset {
   border: 0;
   padding: 0;
+  margin: 0;
+  margin-bottom: 31px;
 }
 
 .form-size__legend {
@@ -8,14 +10,21 @@
   font-size: 15px;
   line-height: 30px;
   color: $text;
+  margin-bottom: 22px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
 }
 
 .form-size__size-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  width: fit-content;
 }
 
 .form-size__size-item {
@@ -26,25 +35,32 @@
   }
 }
 
-.form-size__control {
-  & + .form-size__label {
-    padding: 10px 33px;
-    display: block;
-    box-shadow: 0 0 0 2px rgba($text, 0.1);
-    font-weight: bold;
-    font-size: 17px;
+.form-size__label {
+  padding: 12px 33px;
+  display: block;
+  border: 2px solid rgba($text, 0.1);
+  font-weight: bold;
+  font-size: 17px;
 
-    @media (min-width: $medium-width) {
-      padding: 13px 50px;
-    }
+  @media (min-width: $medium-width) {
+    padding: 12px 48px;
   }
 
-  &--active + .form-size__label {
-    box-shadow: 0 0 0 2px $turquoise;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid rgba($text, 0.3);
+  }
+}
+
+.form-size__control {
+  &--active + .form-size__label,
+  &:checked + .form-size__label {
+    border-color: $turquoise;
   }
 }
 
 .form-size__btn {
+  font-family: $font;
   width: 100%;
   font-weight: bold;
   font-size: 17px;
@@ -53,4 +69,12 @@
   background-color: $turquoise;
   border: 0;
   padding: 0;
+  text-transform: uppercase;
+  padding-top: 21px;
+  padding-bottom: 15px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $turquoise-lighter;
+  }
 }

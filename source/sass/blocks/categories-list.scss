@@ -1,15 +1,11 @@
 .categories-list {
-  margin: 0;
-  padding: 0;
   list-style: none;
   width: 100%;
   display: block;
-  margin-top: 120px;
 
   @media (min-width: $medium-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 370px;
   }
 }
 
@@ -17,9 +13,90 @@
   background-color: $turquoise;
   flex-basis: 100%;
   max-width: 100%;
-  padding-top: 24px;
+  padding-top: 25px;
   padding-left: 30px;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
+  padding-right: 113px;
+  position: relative;
+
+  &::after {
+    @include pseudo();
+    @include size(40px, 62px);
+    background-image: url("../img/icon-interior.svg");
+    right: 36px;
+    top: 24px;
+    opacity: 0.5;
+
+    @media (min-width: $medium-width) {
+      top: 30px;
+    }
+
+    @media (min-width: $large-width) {
+      top: 31px;
+    }
+  }
+
+  &:hover,
+  &:focus-within {
+    background-color: $turquoise-lighter;
+    outline: none;
+    cursor: pointer;
+
+    @media (min-width: $medium-width) {
+      transform: scale(1, 1.05);
+    }
+
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    @media (min-width: $medium-width) {
+      transform: scale(1, 1.05);
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &--darker {
+    background-color: $turquoise-darker;
+
+    &::after {
+      @include size(60px, 60px);
+      background-image: url("../img/icon-toy.svg");
+      right: 27px;
+      top: 20px;
+
+      @media (min-width: $medium-width) {
+        top: 33px;
+        right: 32px;
+      }
+
+      @media (min-width: $large-width) {
+        top: 33px;
+        right: 35px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $turquoise-darker-active;
+      outline: none;
+
+      &::after {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
 
   @media (min-width: $medium-width) {
     flex-basis: 50%;
@@ -28,15 +105,25 @@
     padding-bottom: 34px;
   }
 
-  &--darker {
-    background-color: $turquoise-darker;
+  @media (min-width: $large-width) {
+    padding-bottom: 34px;
   }
 }
 
 .categories-list__link {
+  display: block;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: $basic-white;
   text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: $medium-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

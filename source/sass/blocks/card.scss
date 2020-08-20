@@ -1,5 +1,6 @@
 .card {
   width: auto;
+  border: 1px solid $shadow-header;
 
   @media (min-width: $medium-width) {
     display: flex;
@@ -12,9 +13,18 @@
     flex-direction: column;
     width: 316px;
   }
+
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 6px 10px rgba($basic-black, 0.1);
+  }
 }
 
 .card__link-img {
+  &:focus {
+    outline: none;
+  }
+
   @media (min-width: $medium-width) {
     width: 50%;
   }
@@ -25,35 +35,45 @@
 }
 
 .card__img {
-  display: block;
   margin: 0 auto;
   object-fit: cover;
+
+  @media (min-width: $medium-width) {
+    margin: 0;
+  }
 }
 
 .card__info-wrapper {
-  border: 1px solid $shadow-header;
-  padding: 0 25px;
+  padding: 0 26px;
+  padding-top: 28px;
 
   @media (min-width: $medium-width) {
     width: 50%;
+    max-width: 50%;
+    min-width: 0;
+    word-break: break-word;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-left: 33px;
+    padding-right: 30px;
   }
 
   @media (min-width: $large-width) {
-    width: auto;
+    width: 316px;
+    max-width: 316px;
+    min-width: 0;
+    padding-left: 28px;
   }
 }
 
 .card__info-wrapper-param {
-  @media (min-width: $large-width) {
-    min-height: 141px;
-  }
-}
+  margin-bottom: 17px;
+  position: relative;
 
-.card__link-heading {
-  text-decoration: none;
+  @media (min-width: $large-width) {
+    min-height: 79px;
+  }
 }
 
 .card__heading {
@@ -61,9 +81,28 @@
   font-size: 17px;
   line-height: 24px;
   color: $basic-black;
+  margin: 0;
+  margin-bottom: 4px;
 
   @media (min-width: $medium-width) {
     font-size: 20px;
+  }
+}
+
+.card__link-heading {
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .card__heading,
+  &:focus .card__heading {
+    color: rgba($basic-black, 0.6);
+  }
+
+  &:active .card__heading {
+    color: rgba($basic-black, 0.3);
   }
 }
 
@@ -72,6 +111,7 @@
   font-size: 13px;
   line-height: 30px;
   color: $text;
+  margin: 0;
 
   @media (min-width: $medium-width) {
     font-size: 15px;
@@ -83,14 +123,23 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  min-height: 73px;
+  min-height: 74px;
+  position: relative;
+
+  &::before {
+    @include pseudo();
+    @include size(100%, 1px);
+    background-color: $shadow-header;
+    top: 0;
+  }
 
   @media (min-width: $medium-width) {
     margin-top: auto;
+    min-height: 73px;
   }
 
   @media (min-width: $large-width) {
-    min-height: 73px;
+    min-height: 71px;
   }
 }
 
@@ -106,14 +155,29 @@
   }
 }
 
-.card__btn {
-  max-height: 19px;
-}
-
 .card__basket {
   @include size(21px, 19px);
+  fill: rgba($basic-black, 0.2);
+
+  &:hover {
+    fill: $turquoise;
+  }
 }
 
-.card__basket-path {
-  fill: $cart;
+
+.card__btn {
+  max-height: 19px;
+
+  &:focus {
+    outline: none;
+
+    & .card__basket {
+
+      fill: $turquoise;
+    }
+  }
+
+  &:active .card__basket {
+    fill: rgba($turquoise, 0.3);
+  }
 }

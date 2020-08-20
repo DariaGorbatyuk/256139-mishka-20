@@ -3,17 +3,25 @@
   padding: 0 30px;
   max-width: 1150px;
   min-width: 320px;
+  position: relative;
 
-  &--space {
+  &--space,
+  &--header {
     padding: 0;
   }
 
   @media (min-width: $medium-width) {
     padding-left: 50px;
     padding-right: 50px;
+
+    &--space {
+      padding: 0;
+    }
   }
 
   @media (min-width: $large-width) {
+    padding-left: 50px;
+    padding-right: 50px;
     margin: 0 auto;
   }
 }
