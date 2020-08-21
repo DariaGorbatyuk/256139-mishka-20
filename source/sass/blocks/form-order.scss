@@ -310,16 +310,16 @@
   text-transform: uppercase;
   margin-bottom: 23px;
   margin-top: 0;
-  padding-right: 200px;
   display: flex;
   align-items: center;
-  position: relative;
 
   &::after {
-    @include pseudo();
-    @include size(200px, 1px);
+    content: "";
+    height: 1px;
     background-color: $turquoise-radio;
-    right: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 17px;
   }
 
   &--contact {
