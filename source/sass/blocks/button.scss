@@ -10,4 +10,17 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $text;
+    background-color: $text;
+    color: $basic-white;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+    cursor: pointer;
+  }
 }

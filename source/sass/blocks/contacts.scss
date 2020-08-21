@@ -2,7 +2,7 @@
   @media (min-width: $large-width) {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: minmax(136px, auto) repeat(2, min-content);
   }
 }
 
@@ -11,16 +11,40 @@
   font-size: 18px;
   line-height: 30px;
   color: $basic-black;
+  margin: 0;
+  margin-bottom: 27px;
+  margin-left: 30px;
+  position: relative;
 
   @media (min-width: $medium-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-left: 50px;
+    margin-bottom: 52px;
+    margin-right: 50px;
+
+    &::after {
+      @include pseudo();
+      @include size(47px, 81px);
+      background-image: url("../img/icon-flag.svg");
+      background-size: 47px 81px;
+      background-repeat: no-repeat;
+      top: -22px;
+      right: 3px;
+    }
   }
 
   @media (min-width: $large-width) {
     font-size: 53px;
     line-height: 57px;
     grid-column: 2/span 1;
+    margin: 0;
+    align-self: end;
+
+    &::after {
+      top: -19px;
+      left: -112px;
+    }
   }
 }
 
@@ -29,16 +53,28 @@
   font-size: 15px;
   line-height: 30px;
   color: $text;
+  margin: 0;
+  margin-bottom: 33px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media (min-width: $medium-width) {
     font-size: 17px;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $large-width) {
     grid-column: 2/span 1;
-    align-self: center;
+    margin: 0;
+    margin-left: 0;
+    padding-right: 30px;
+    padding-left: 0;
+    align-self: start;
+    margin-top: 36px;
   }
 }
 
@@ -47,18 +83,32 @@
   flex-wrap: wrap;
   flex-basis: 100%;
   max-width: 100%;
+  min-width: 0;
+  word-break: break-word;
+
+  &:first-of-type {
+    margin-bottom: 31px;
+  }
 
   @media (min-width: $medium-width) {
     flex-basis: 50%;
+
+    &:first-of-type {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $large-width) {
     flex-basis: 100%;
+
+    &:first-of-type {
+      margin-bottom: 29px;
+    }
   }
 }
 
 .contacts__term {
-  margin-right: 12%;
+  margin-right: 11%;
 
   @media (min-width: $medium-width) {
     margin-right: 7%;
@@ -67,29 +117,68 @@
 
 .contacts__value {
   margin: 0;
+  flex-basis: 70%;
 }
 
-.contacts__value-email {
+.contacts__link-email {
   color: $text;
   text-decoration: none;
-  box-shadow: 0 1px 0 0 $turquoise-darker;
+  border-bottom: 1px solid $turquoise-darker;
+  padding-bottom: 2px;
+
+  &:hover,
+  &:focus {
+    color: $turquoise-darker-active;
+    border-bottom: 1px solid $turquoise-darker-active;
+    outline: none;
+  }
+
+  &:active {
+    color: $turquoise-darker-active;
+    border-bottom: 1px solid rgba($turquoise-darker-active, 0.1);
+    outline: none;
+  }
+
+  @media (min-width: $large-width) {
+    padding-bottom: 6px;
+  }
 }
 
-.contacts__map {
+.contacts__picture {
   @media (min-width: $large-width) {
     grid-column: 3 / -1;
     grid-row: 1/-1;
   }
 }
 
-.contacts__link {
+.contacts__map {
+  width: 100%;
+  margin-bottom: 42px;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__btn {
+  margin: 0 30px;
+  font-size: 18px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
   @media (min-width: $medium-width) {
     width: 230px;
     margin: 0 auto;
+    font-size: 17px;
   }
 
   @media (min-width: $large-width) {
     grid-column: 2/span 1;
     margin: 0;
+    align-self: end;
   }
 }

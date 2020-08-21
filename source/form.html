@@ -9,35 +9,40 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page__body">
-<header class="container container--space">
-  <nav class="nav">
+<header class="container container--header">
+  <nav class="nav nav--closed">
     <a class="nav__logo" href="index.html">
-      <img alt="Магазин Мишка" class="nav__logo-img" height="35" src="./img/logo-mobile.svg" width="86">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img alt="Магазин Мишка" class="nav__logo-img" src="./img/logo-mobile.svg">
+      </picture>
     </a>
     <button class="nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <ul class="nav__list site-list">
+    <ul class="nav__site-list site-list">
       <li class="site-list__item">
-        <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        <a class="site-list__link site-list__link--catalog" href="catalog.html">Каталог товаров</a>
       </li>
       <li class="site-list__item">
-        <a class="site-list__link">Вязание на заказ</a>
+        <a class="site-list__link site-list__link--knit">Вязание на заказ</a>
       </li>
       <li class="site-list__item site-list__item--search">
         <a class="site-list__link site-list__link--search" href="#">
-          <svg class="site-list__svg-search" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-              <path class="site-list__path-search" fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+          <svg class="site-list__svg" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+              <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
           </svg>
           <span class="site-list__hidden">Поиск по сайту</span>
         </a>
       </li>
       <li class="site-list__item site-list__item--basket">
         <a class="site-list__link site-list__link--basket" href="#">
-          <svg class="site-list__svg-basket" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-            <path class="site-list__path-basket" fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+          <svg class="site-list__svg site-list__svg--basket" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+            <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
           </svg>
-          Корзина: пока пуста</a>
+          <span class="site-list__item-text">Корзина: пока пуста</span>
+        </a>
       </li>
       <li class="site-list__item">
         <a class="site-list__link" href="#">Новые поступления</a>
@@ -49,90 +54,114 @@
     </ul>
   </nav>
 </header>
-<main class="page-main">
-  <header class="main-header  main-header--other">
-    <h1 class="main-header__heading">Вязание на заказ</h1>
+<main class="page__main page__main--form main">
+  <header class="main__header-other main__header-other--form header-other">
+    <h1 class="header-other__heading container">Вязание на заказ</h1>
   </header>
-  <p class="page-main__text container">
+  <p class="main__text container">
     Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
   </p>
-  <form class="page-main__form-order form-order" action="https://echo.htmlacademy.ru" method="post">
+  <form class="main__form-order form-order" action="https://echo.htmlacademy.ru" method="post">
     <fieldset class="form-order__fieldset container">
-      <legend class="form-order__legend">Тип</legend>
-      <ul class="form-order__list form-order__list--type">
-        <li class="form-order__item form-order__item--type">
-          <input class="form-order__control form-order__control--radio" type="radio" name="thing-type" id="thing-type-accessory" value="accessory" checked>
-          <label class="form-order__label form-order__label--radio" for="thing-type-accessory">Аксессуар для
-            интерьера</label>
-        </li>
-        <li class="form-order__item form-order__item--type">
-          <input class="form-order__control form-order__control--radio" type="radio" name="thing-type" id="thing-type-toy" value="toy">
-          <label class="form-order__label form-order__label--radio" for="thing-type-toy">Детская игрушка</label>
-        </li>
-      </ul>
+      <div class="form-order__w-layout">
+        <h2 class="form-order__legend form-order__legend--type">Тип</h2>
+        <ul class="form-order__list form-order__list--type">
+          <li class="form-order__item form-order__item--type">
+            <input class="form-order__control form-order__control--radio" type="radio" name="thing-type" id="thing-type-accessory" value="accessory" checked>
+            <label class="form-order__label form-order__label--radio" for="thing-type-accessory">Аксессуар для интерьера</label>
+          </li>
+          <li class="form-order__item form-order__item--type">
+            <input class="form-order__control form-order__control--radio" type="radio" name="thing-type" id="thing-type-toy" value="toy">
+            <label class="form-order__label form-order__label--radio" for="thing-type-toy">Детская игрушка</label>
+          </li>
+        </ul>
+      </div>
     </fieldset>
     <div class="form-order__fieldset-wrapper">
       <fieldset class="form-order__fieldset form-order__fieldset--color container">
-        <legend class="form-order__legend">Цвет</legend>
-        <ul class="form-order__list form-order__list--color">
-          <li class="form-order__item form-order__item--color form-order__item--color">
-            <input class="form-order__control form-order__control--check" type="checkbox" name="color-white" id="color-white" checked>
-            <label class="form-order__label form-order__label--check" for="color-white">Белый</label>
-          </li>
-          <li class="form-order__item form-order__item--color form-order__item--color">
-            <input class="form-order__control form-order__control--check" type="checkbox" name="color-gray" id="color-gray" checked>
-            <label class="form-order__label form-order__label--check" for="color-gray">Серый</label>
-          </li>
-          <li class="form-order__item form-order__item--color form-order__item--color">
-            <input class="form-order__control form-order__control--check" type="checkbox" name="color-tiffany" id="color-tiffany">
-            <label class="form-order__label form-order__label--check" for="color-tiffany">«Тиффани»</label>
-          </li>
-          <li class="form-order__item form-order__item--color form-order__item--color">
-            <input class="form-order__control form-order__control--check" type="checkbox" name="color-black" id="color-black">
-            <label class="form-order__label form-order__label--check" for="color-black">Черный</label>
-          </li>
-          <li class="form-order__item form-order__item--color form-order__item--color">
-            <input class="form-order__control form-order__control--check" type="checkbox" name="color-pink" id="color-pink">
-            <label class="form-order__label form-order__label--check" for="color-pink">Розовый</label>
-          </li>
-          <li class="form-order__item form-order__item--color form-order__item--color">
-            <input class="form-order__control form-order__control--check" type="checkbox" name="color-orange" id="color-orange">
-            <label class="form-order__label form-order__label--check" for="color-orange">Оранжевый</label>
-          </li>
-        </ul>
+        <div class="form-order__w-layout">
+          <h2 class="form-order__legend form-order__legend--color">Цвет</h2>
+          <ul class="form-order__list form-order__list--color">
+            <li class="form-order__item form-order__item--color">
+              <input class="form-order__control form-order__control--color" type="checkbox" name="color-white" id="color-white" checked>
+              <label class="form-order__label form-order__label--color" for="color-white">Белый</label>
+            </li>
+            <li class="form-order__item form-order__item--color">
+              <input class="form-order__control form-order__control--color" type="checkbox" name="color-gray" id="color-gray" checked>
+              <label class="form-order__label form-order__label--color" for="color-gray">Серый</label>
+            </li>
+            <li class="form-order__item form-order__item--color">
+              <input class="form-order__control form-order__control--color" type="checkbox" name="color-tiffany" id="color-tiffany">
+              <label class="form-order__label form-order__label--color" for="color-tiffany">«Тиффани»</label>
+            </li>
+            <li class="form-order__item form-order__item--color">
+              <input class="form-order__control form-order__control--color" type="checkbox" name="color-black" id="color-black">
+              <label class="form-order__label form-order__label--color" for="color-black">Черный</label>
+            </li>
+            <li class="form-order__item form-order__item--color">
+              <input class="form-order__control form-order__control--color" type="checkbox" name="color-pink" id="color-pink">
+              <label class="form-order__label form-order__label--color" for="color-pink">Розовый</label>
+            </li>
+            <li class="form-order__item form-order__item--color">
+              <input class="form-order__control form-order__control--color" type="checkbox" name="color-orange" id="color-orange">
+              <label class="form-order__label form-order__label--color" for="color-orange">Оранжевый</label>
+            </li>
+          </ul>
+        </div>
       </fieldset>
     </div>
-    <fieldset class="form-order__fieldset container">
-      <legend class="form-order__legend">ФИО</legend>
-      <ul class="form-order__list form-order__list--id">
-        <li class="form-order__item form-order__item--id">
-          <label for="name" class="form-order__label form-order__label--text">Имя:</label>
-          <input type="text" class="form-order__control form-order__control--text form-order__control--short" name="name" id="name" placeholder="Введите ваше имя*" required>
-        </li>
-        <li class="form-order__item form-order__item--id">
-          <label for="surname" class="form-order__label form-order__label--text">Фамилия:</label>
-          <input type="text" class="form-order__control form-order__control--text form-order__control--short" name="surname" id="surname" placeholder="Укажите фамилию*" required>
-        </li>
-        <li class="form-order__item form-order__item--id">
-          <label for="patronymic" class="form-order__label form-order__label--text">Отчество:</label>
-          <input type="text" class="form-order__control form-order__control--text form-order__control--short" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
-        </li>
-      </ul>
+    <fieldset class="form-order__fieldset form-order__fieldset--id container">
+      <div class="form-order__w-layout">
+        <h2 class="form-order__legend form-order__legend--id">ФИО</h2>
+        <ul class="form-order__list form-order__list--id">
+          <li class="form-order__item form-order__item--id">
+            <label for="name" class="form-order__label form-order__label--text">Имя:</label>
+            <input type="text" class="form-order__control form-order__control--text form-order__control--id" name="name" id="name" placeholder="Введите ваше имя*" required>
+          </li>
+          <li class="form-order__item form-order__item--id">
+            <label for="surname" class="form-order__label form-order__label--text">Фамилия:</label>
+            <input type="text" class="form-order__control form-order__control--text form-order__control--id" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+          </li>
+          <li class="form-order__item form-order__item--id">
+            <label for="patronymic" class="form-order__label form-order__label--text">Отчество:</label>
+            <input type="text" class="form-order__control form-order__control--text form-order__control--id" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+          </li>
+        </ul>
+      </div>
     </fieldset>
     <div class="form-order__fieldset-wrapper">
       <fieldset class="form-order__fieldset form-order__fieldset--contacts container">
         <legend class="visually-hidden">Контактные данные</legend>
         <div class="form-order__list form-order__list--contacts">
-          <label class="form-order__legend form-order__legend--contact" for="tel">тел</label>
-          <input class="form-order__control form-order__control--text form-order__control--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          <label class="form-order__legend form-order__legend--contact" for="email">E-mail</label>
-          <input class="form-order__control form-order__control--text form-order__control--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+          <div class="form-order__w-contact">
+            <label class="form-order__legend form-order__legend--contact" for="tel">тел</label>
+            <input class="form-order__control form-order__control--text form-order__control--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <svg class="form-order__icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
+            <g>
+              <g>
+                <g>
+                  <path d="M17.321,24.333c-0.371,0-0.744,0-1.115,0c-4.904-0.58-8.497-2.857-11.11-5.772C2.473,15.637,0.402,11.875,0,6.817 c0-0.453,0-0.906,0-1.358c0.091-0.921,0.544-1.55,1.067-2.086c0.65-0.666,1.63-1.522,2.522-1.553 c0.659-0.022,1.78,0.451,2.232,1.066c0.388,0.53,0.595,1.59,0.775,2.378c0.185,0.797,0.6,1.95,0.485,2.717 C6.905,9.177,5.317,9.684,4.85,10.553c1.551,3.721,4.089,6.456,7.472,8.345c0.847-0.465,1.595-1.864,2.767-1.892 c0.428-0.012,0.972,0.209,1.406,0.34c0.477,0.143,0.891,0.326,1.311,0.484c0.705,0.266,1.957,0.621,2.378,1.213 c0.433,0.61,0.681,1.608,0.581,2.231C20.571,22.508,18.538,23.877,17.321,24.333z"/>
+                </g>
+              </g>
+              <path d="M12.529,1.528c5.949,0,10.771,4.822,10.771,10.771h1.529C24.829,5.507,19.323,0,12.529,0V1.528z"/>
+              <path d="M12.529,9.327v1.552c0.785,0,1.421,0.636,1.421,1.42h1.553C15.502,10.657,14.172,9.327,12.529,9.327z"/>
+              <path d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z"/>
+            </g>
+          </svg>
+          </div>
+          <div class="form-order__w-contact">
+            <label class="form-order__legend form-order__legend--contact" for="email">E-mail</label>
+            <input class="form-order__control form-order__control--text form-order__control--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+            <svg class="form-order__icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+              <path d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
+            </svg>
+          </div>
         </div>
       </fieldset>
     </div>
     <div class="container">
       <div class="form-order__list form-order__list--add">
-        <label class="form-order__legend form-order__legend--contact" for="additional">Доп</label>
+        <label class="form-order__legend form-order__legend--add" for="additional">Доп</label>
         <textarea class="form-order__control form-order__control--text form-order__control--textarea" name="additional" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
     </div>
@@ -144,8 +173,9 @@
     </div>
   </form>
 </main>
-<footer class="page-footer">
-  <div class="page-footer--wrapper container">
+
+<footer class="page-footer ">
+  <div class="page-footer__wrapper container">
     <div class="page-footer__logo">
       <a class="page-footer__logo-link">
         <svg class="page-footer__logo-img" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
@@ -165,7 +195,7 @@
       <ul class="socials__list">
         <li class="socials__item"><a class="socials__link socials__link--inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
         </li>
-        <li class="socials__item"><a class="socials__link socials__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+        <li class="socials__item socials__item--fb"><a class="socials__link socials__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
         </li>
         <li class="socials__item"><a class="socials__link socials__link--tw" href="#"><span class="visually-hidden">Твиттер</span></a>
         </li>
@@ -176,7 +206,7 @@
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="copyright__img-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
           <title>HTML Academy</title>
-          <path class="copyright__img-path" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
         </svg>
       </a>
     </div>
