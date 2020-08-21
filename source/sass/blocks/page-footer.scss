@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: darkred;
+  background-color: $gray;
 }
 
 .page-footer__wrapper {
@@ -20,7 +20,7 @@
   @media (min-width: $medium-width) {
     display: block;
     flex-basis: 27%;
-    max-width: 28%;
+    max-width: 27%;
   }
 }
 
