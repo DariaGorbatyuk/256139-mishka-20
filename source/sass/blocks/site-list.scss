@@ -117,18 +117,26 @@
   padding-left: 24%;
 
   &:hover,
-  &:focus {
+  &:focus{
     outline: none;
+    opacity: 0.6;
   }
 
-  &:hover .site-list__item-text,
-  &:focus .site-list__item-text {
-    opacity: 0.6;
+  &--basket:hover,
+  &--basket:focus,
+  &--search:hover,
+  &--search:focus{
+    opacity: 1;
   }
 
   &:hover .site-list__svg,
   &:focus .site-list__svg {
     fill: $turquoise;
+  }
+
+  &:hover .site-list__item-text,
+  &:focus .site-list__item-text {
+    opacity: 0.6;
   }
 
   &:active {
@@ -139,10 +147,6 @@
   &:not([href]):focus,
   &:not([href]):active {
     opacity: 1;
-  }
-
-  &:active .site-list__svg {
-    fill: rgba($turquoise, 0.3);
   }
 
   @media (min-width: $medium-width) {
