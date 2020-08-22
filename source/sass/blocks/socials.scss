@@ -48,26 +48,17 @@
   }
 }
 
+.socials__svg {
+  fill: $cart;
+}
+
 .socials__link {
-  position: relative;
-
-  &::after {
-    @include pseudo();
-    @include size(22px, 22px);
-    background-repeat: no-repeat;
+  &:hover .socials__svg,
+  &:focus .socials__svg {
+    fill: $turquoise-darker-active;
   }
 
-  &--inst::after {
-    background-image: url("../img/icon-insta.svg");
-  }
-
-  &--fb::after {
-    background-image: url("../img/icon-fb.svg");
-
-    @include size(22px, 28px);
-  }
-
-  &--tw::after {
-    background-image: url("../img/icon-twitter.svg");
+  &:active .socials__svg {
+    fill: rgba($turquoise-darker-active, 0.3);
   }
 }

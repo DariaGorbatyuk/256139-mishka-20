@@ -43,7 +43,8 @@
     cursor: pointer;
 
     @media (min-width: $medium-width) {
-      transform: scale(1, 1.05);
+      transform: translateY(-5px);
+      transition: transform 200ms ease-in;
     }
 
     &::after {
@@ -53,7 +54,8 @@
 
   &:active {
     @media (min-width: $medium-width) {
-      transform: scale(1, 1.05);
+      transform: translateY(-5px);
+      transition: transform 200ms ease-in;
     }
 
     &::after {
