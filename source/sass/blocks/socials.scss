@@ -48,17 +48,17 @@
   }
 }
 
-.socials__svg{
+.socials__svg {
   fill: $cart;
 }
 
 .socials__link {
   &:hover .socials__svg,
-  &:focus .socials__svg{
-    fill: $turquoise-darker-active
+  &:focus .socials__svg {
+    fill: $turquoise-darker-active;
   }
 
-  &:active .socials__svg{
+  &:active .socials__svg {
     fill: rgba($turquoise-darker-active, 0.3);
   }
 }

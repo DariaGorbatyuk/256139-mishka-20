@@ -119,7 +119,7 @@
   padding: 0;
   background-color: $basic-white;
 
-  .nav--closed &{
+  .nav--closed & {
     top: 32px;
     right: 31px;
   }
