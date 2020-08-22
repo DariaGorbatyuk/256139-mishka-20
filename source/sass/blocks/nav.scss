@@ -33,7 +33,7 @@
   }
 
   &--opened {
-    padding-top: 22px;
+    padding-top: 23px;
     padding-bottom: 0;
 
     @media (min-width: $medium-width) {
@@ -41,7 +41,7 @@
     }
 
     .nav__site-list {
-      margin-top: 20px;
+      margin-top: 21px;
       margin-bottom: 0;
 
       @media (min-width: $medium-width) {
@@ -67,10 +67,12 @@
   }
 
   &--no-js {
+    padding-top: 23px;
     padding-bottom: 0;
 
     .nav__site-list {
-      margin-top: 20px;
+      margin-top: 21px;
+      margin-bottom: 0;
 
       @media (min-width: $medium-width) {
         margin-top: 0;
@@ -85,6 +87,7 @@
   @media (min-width: $medium-width) {
     display: block;
     margin: 0 auto;
+    padding-top: 0;
   }
 }
 
@@ -108,13 +111,18 @@
 
 .nav__toggle {
   position: absolute;
-  top: 32px;
-  right: 31px;
+  top: 29px;
+  right: 28px;
   width: 26px;
   height: 20px;
   border: 0;
   padding: 0;
   background-color: $basic-white;
+
+  .nav--closed &{
+    top: 32px;
+    right: 31px;
+  }
 
   @media (min-width: $medium-width) {
     display: none;
