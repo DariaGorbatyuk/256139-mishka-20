@@ -388,7 +388,7 @@
     outline: none;
 
     &:hover,
-    &:active {
+    &:focus {
       outline: none;
       border-color: $turquoise-radio;
     }
