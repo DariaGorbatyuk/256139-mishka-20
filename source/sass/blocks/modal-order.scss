@@ -5,18 +5,18 @@
   position: absolute;
   margin: auto;
   padding-top: 29px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 29px;
+  padding-right: 29px;
   padding-bottom: 46px;
-  border-top: 1px solid $gray-line;
+  border: 1px solid $gray-line;
   box-shadow: 0 5px 10px rgba($modal-shadow, 0.25);
   text-align: center;
   background-color: $basic-white;
 
   @media (min-width: $medium-width) {
     width: 566px;
-    padding-left: 106px;
-    padding-right: 106px;
+    padding-left: 105px;
+    padding-right: 105px;
     padding-top: 38px;
     padding-bottom: 46px;
     box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
