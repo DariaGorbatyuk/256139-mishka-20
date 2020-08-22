@@ -20,7 +20,6 @@
 
 .site-list__item {
   box-shadow: 0 1px 0 $shadow-header, inset 0 1px 0 $shadow-header;
-  position: relative;
 
   &:last-child,
   &:nth-last-child(2),
@@ -113,11 +112,13 @@
   display: block;
   padding-top: 29px;
   padding-bottom: 26px;
-  width: 100%;
-  padding-left: 24%;
+  width: 259px;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 45px;
 
   &:hover,
-  &:focus{
+  &:focus {
     outline: none;
     opacity: 0.6;
   }
@@ -125,7 +126,7 @@
   &--basket:hover,
   &--basket:focus,
   &--search:hover,
-  &--search:focus{
+  &--search:focus {
     opacity: 1;
   }
 
@@ -174,8 +175,7 @@
 
 .site-list__svg {
   position: absolute;
-  left: 10%;
-  top: 33px;
+  left: 0;
   fill: rgba($basic-black, 0.2);
 
   @media (min-width: $medium-width) {
