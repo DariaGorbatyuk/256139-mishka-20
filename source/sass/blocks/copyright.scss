@@ -25,10 +25,10 @@
   color: $basic-black;
   margin: 0;
   padding-top: 10px;
-  padding-right: 18px;
+  padding-right: 28px;
 
   @media (min-width: $medium-width) {
-    padding-right: 19px;
+    padding-right: 28px;
     padding-top: 13px;
   }
 }
@@ -38,7 +38,6 @@
 }
 
 .copyright__img-svg {
-  @include size(40px, 40px);
   fill: $turquoise;
 
   &:hover,
