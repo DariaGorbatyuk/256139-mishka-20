@@ -41,7 +41,6 @@
     }
 
     .nav__site-list {
-      margin-top: 21px;
       margin-bottom: 0;
 
       @media (min-width: $medium-width) {
@@ -71,7 +70,6 @@
     padding-bottom: 0;
 
     .nav__site-list {
-      margin-top: 21px;
       margin-bottom: 0;
 
       @media (min-width: $medium-width) {
@@ -94,8 +92,10 @@
 .nav__logo {
   width: max-content;
   margin: 0 auto;
+  margin-bottom: 21px;
 
   @media (min-width: $medium-width) {
+    margin-bottom: 0;
     position: absolute;
     top: 22px;
     left: -1px;
