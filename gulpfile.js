@@ -7,6 +7,7 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
+const imagemin = require('gulp-imagemin');
 
 // Styles
 
@@ -53,3 +54,13 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+const images = ()=>{
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.svgo()
+    ]))
+}
+exports.images = images;
