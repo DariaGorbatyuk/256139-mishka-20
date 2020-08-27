@@ -9,6 +9,9 @@ const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
+const svgstore = require('gulp-svgstore');
+const cheerio = require('gulp-cheerio');
+
 
 // Styles
 
@@ -76,3 +79,19 @@ const webpFormat = () => {
     .pipe(gulp.dest("source/img"));
 }
 exports.webpFormat = webpFormat;
+
+//sprite
+
+const sprite = () => {
+  return gulp.src("source/img/**/icon-*.svg")
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+      },
+      parserOptions: { xmlMode: true }
+    }))
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"))
+}
+exports.sprite = sprite;
