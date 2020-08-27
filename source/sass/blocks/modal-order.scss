@@ -1,4 +1,20 @@
 .modal-order {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba($basic-white, 0.9);
+  z-index: 100;
+  display: none;
+
+  &--open {
+    display: block;
+  }
+}
+
+.modal-order__window {
   top: 20vh;
   left: 0;
   right: 0;
@@ -20,25 +36,6 @@
     padding-top: 38px;
     padding-bottom: 46px;
     box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-  }
-}
-
-.modal-order__wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  background-color: rgba($basic-white, 0.9);
-  z-index: 100;
-
-  &--opened {
-    display: block;
-  }
-
-  &--closed {
-    display: none;
   }
 }
 
