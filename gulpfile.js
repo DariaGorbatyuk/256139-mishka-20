@@ -8,6 +8,7 @@ const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
 
 // Styles
 
@@ -55,7 +56,9 @@ exports.default = gulp.series(
   styles, server, watcher
 );
 
-const images = ()=>{
+//minImages
+
+const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
@@ -64,3 +67,12 @@ const images = ()=>{
     ]))
 }
 exports.images = images;
+
+//webp
+
+const webpFormat = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"));
+}
+exports.webpFormat = webpFormat;
