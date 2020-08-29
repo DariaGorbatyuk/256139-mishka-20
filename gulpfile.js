@@ -52,7 +52,7 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-/*  gulp.watch("build/sass/!**!/!*.scss", gulp.series("styles"));*/
+  gulp.watch("build/sass/!**!/!*.scss", gulp.series("styles"));
   gulp.watch("build/*.html").on("change", sync.reload);
 }
 
