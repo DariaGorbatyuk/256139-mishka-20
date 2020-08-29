@@ -24,6 +24,7 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -52,9 +53,16 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("build/sass/!**!/!*.scss", gulp.series("styles"));
-  gulp.watch("build/*.html").on("change", sync.reload);
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/*.html", gulp.series(html));
 }
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"))
+    .pipe(sync.stream());
+}
+exports.html = html;
 
 //minImages
 
