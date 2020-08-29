@@ -7,11 +7,11 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
-const imagemin = require('gulp-imagemin');
-const webp = require('gulp-webp');
-const svgstore = require('gulp-svgstore');
-const cheerio = require('gulp-cheerio');
-const del = require('del');
+const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
+const cheerio = require("gulp-cheerio");
+const del = require("del");
 
 
 // Styles
@@ -38,7 +38,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -83,7 +83,7 @@ const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
     .pipe(cheerio({
       run: function ($) {
-        $('[fill]').removeAttr("fill");
+        $("[fill]").removeAttr("fill");
       },
       parserOptions: {xmlMode: true}
     }))
