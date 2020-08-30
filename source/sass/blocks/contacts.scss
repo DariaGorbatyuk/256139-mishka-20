@@ -14,7 +14,10 @@
   margin: 0;
   margin-bottom: 27px;
   margin-left: 30px;
+  margin-right: 30px;
   position: relative;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     font-size: 43px;
@@ -70,7 +73,6 @@
   @media (min-width: $large-width) {
     grid-column: 2/span 1;
     margin: 0;
-    margin-left: 0;
     padding-right: 30px;
     padding-left: 0;
     align-self: start;
@@ -81,7 +83,7 @@
 .contacts__data-wrapper {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 100%;
+  //flex-basis: 100%;
   max-width: 100%;
   min-width: 0;
   word-break: break-word;
@@ -169,6 +171,8 @@
   font-size: 18px;
   padding-top: 14px;
   padding-bottom: 14px;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     width: 230px;
