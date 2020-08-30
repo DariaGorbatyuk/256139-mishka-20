@@ -394,6 +394,11 @@
     }
   }
 
+  &--tel,
+  &--email {
+    padding-right: 45px;
+  }
+
   &--textarea {
     border: 2px solid $text;
     box-shadow: none;
@@ -422,6 +427,7 @@
     &--tel,
     &--email {
       background-color: $gray;
+      padding-right: 60px;
     }
 
     &--text {
@@ -456,6 +462,7 @@
     &--email {
       flex-basis: 80%;
       max-width: 80%;
+      padding-right: 38px;
     }
 
     &--textarea {
@@ -523,11 +530,16 @@
   padding-bottom: 12px;
   padding-top: 15px;
   width: 100%;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     order: -1;
     width: auto;
     padding-left: 30px;
     padding-right: 30px;
+    min-width: 230px;
+    max-width: 230px;
+    margin-right: 10px;
   }
 }
