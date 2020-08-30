@@ -44,6 +44,8 @@
   color: $basic-black;
   margin: 0;
   margin-bottom: 14px;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     grid-column: 1/ span 2;
@@ -90,6 +92,8 @@
   color: $text;
   margin: 0;
   margin-bottom: 35px;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     font-size: 17px;
@@ -108,9 +112,13 @@
   line-height: 24px;
   color: $basic-black;
   font-style: normal;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     font-size: 18px;
+    max-width: 75%;
+    display: block;
   }
 
   @media (min-width: $large-width) {
@@ -175,6 +183,8 @@
 .reviews__btn {
   padding-top: 15px;
   padding-bottom: 13px;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     grid-column: 3/ span 2;
