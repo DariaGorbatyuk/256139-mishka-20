@@ -6,15 +6,14 @@
   @media (min-width: $medium-width) {
     display: grid;
     grid-template-columns: 25% 23% 13% 39%;
-    grid-template-rows: minmax(87px, auto) minmax(64px, auto);
-
+    grid-template-rows: repeat(2, 87px);
     align-items: center;
     justify-content: center;
   }
 
   @media (min-width: $large-width) {
     grid-template-columns: 184px 228px 288px 83px 264px;
-    grid-template-rows: minmax(87px, auto) minmax(65px, auto);
+    grid-template-rows: repeat(2, 87px);
   }
 }
 
@@ -30,6 +29,9 @@
   @media (min-width: $medium-width) {
     padding: 0;
     box-shadow: none;
+    max-height: 78px;
+    overflow: hidden;
+
 
     &:first-child {
       grid-row: 2/span 1;
@@ -47,8 +49,10 @@
       height: 100%;
       align-items: center;
       justify-content: center;
+      position: relative;
       border-right: 1px solid rgba($basic-black, 0.1);
       border-left: 1px solid rgba($basic-black, 0.1);
+      min-height: 87px;
     }
 
     &--basket {
@@ -70,6 +74,7 @@
       border-right: 1px solid rgba($basic-black, 0.1);
       display: flex;
       align-items: center;
+      min-height: 87px;
     }
 
     &:nth-child(2) {
