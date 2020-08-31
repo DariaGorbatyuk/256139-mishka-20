@@ -7,6 +7,8 @@
     content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
 </head>
 <body class="page__body">
 <header class="container container--header">
@@ -156,7 +158,9 @@
         <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
         <img alt="г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101" class="contacts__map" src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x">
       </picture>
+      <div id="map" class="contacts__yandex-map"></div>
     </div>
+
     <a class="contacts__btn button">Напишите нам</a>
   </section>
 </main>
@@ -165,7 +169,7 @@
   <div class="page-footer__wrapper container">
     <div class="page-footer__logo">
       <a class="page-footer__logo-link" aria-label="Ссылка на главную страницу">
-        <svg class="page-footer__logo-img"  width="102" height="34" role="img">
+        <svg class="page-footer__logo-img" width="102" height="34" role="img">
           <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
         </svg>
       </a>
@@ -231,6 +235,6 @@
     </form>
   </section>
 </div>
-
+<script src="js/script.js"></script>
 </body>
 </html>
