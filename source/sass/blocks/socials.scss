@@ -36,7 +36,7 @@
     padding-right: 39%;
   }
 
-  @media (min-width: $large-width)  {
+  @media (min-width: $large-width) {
     padding-left: 28%;
     padding-right: 43%;
   }
@@ -46,7 +46,7 @@
   @include size(22px, 22px);
   margin-right: 5px;
 
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
 
