@@ -32,12 +32,13 @@
   align-items: center;
 
   @media (min-width: $medium-width) {
-    padding: 0 27%;
+    padding-left: 14%;
+    padding-right: 39%;
   }
 
   @media (min-width: $large-width)  {
-    padding-right: 35%;
-    padding-left: 35.5%;
+    padding-left: 28%;
+    padding-right: 43%;
   }
 }
 

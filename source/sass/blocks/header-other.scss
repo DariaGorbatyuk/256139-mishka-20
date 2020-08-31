@@ -9,7 +9,7 @@
   word-break: break-word;
 
   @media (min-width: $medium-width) {
-    padding-top: 104px;
+    padding-top: 101px;
 
     &::after {
       @include pseudo();
