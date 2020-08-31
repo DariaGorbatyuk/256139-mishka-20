@@ -83,13 +83,12 @@
 .contacts__data-wrapper {
   display: flex;
   flex-wrap: wrap;
-  //flex-basis: 100%;
   max-width: 100%;
   min-width: 0;
   word-break: break-word;
 
   &:first-of-type {
-    margin-bottom: 31px;
+    margin-bottom: 29px;
   }
 
   @media (min-width: $medium-width) {
@@ -147,7 +146,7 @@
 }
 
 .contacts__picture {
-  margin-bottom: 42px;
+  margin-bottom: 41px;
   position: relative;
 
   @media (min-width: $medium-width) {

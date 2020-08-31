@@ -6,14 +6,14 @@
   @media (min-width: $medium-width) {
     display: grid;
     grid-template-columns: 25% 23% 13% 39%;
-    grid-template-rows: repeat(2, 87px);
+    grid-template-rows: 87px 64px;
     align-items: center;
     justify-content: center;
   }
 
   @media (min-width: $large-width) {
     grid-template-columns: 184px 228px 288px 83px 264px;
-    grid-template-rows: repeat(2, 87px);
+    grid-template-rows: 87px 64px;
   }
 }
 
