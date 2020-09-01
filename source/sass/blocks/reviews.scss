@@ -18,6 +18,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: minmax(131px, auto) min-content;
     background-image: url("../img/review@1x.jpg");
+    background-color: $basic-white;
     background-repeat: no-repeat;
     background-position: top 0 left 0;
     padding-bottom: 111px;
@@ -43,6 +44,8 @@
   color: $basic-black;
   margin: 0;
   margin-bottom: 14px;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     grid-column: 1/ span 2;
@@ -89,6 +92,8 @@
   color: $text;
   margin: 0;
   margin-bottom: 35px;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     font-size: 17px;
@@ -107,9 +112,13 @@
   line-height: 24px;
   color: $basic-black;
   font-style: normal;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     font-size: 18px;
+    max-width: 75%;
+    display: block;
   }
 
   @media (min-width: $large-width) {
@@ -128,7 +137,7 @@
   width: 100%;
   font-size: 0;
   line-height: 0;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 
   @media (min-width: $medium-width) {
     grid-column: 4/ span 1;
@@ -174,6 +183,8 @@
 .reviews__btn {
   padding-top: 15px;
   padding-bottom: 13px;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     grid-column: 3/ span 2;

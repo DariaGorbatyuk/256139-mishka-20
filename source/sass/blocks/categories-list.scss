@@ -119,6 +119,8 @@
   line-height: 24px;
   color: $basic-white;
   text-decoration: none;
+  min-width: 0;
+  word-break: break-word;
 
   &:focus {
     outline: none;

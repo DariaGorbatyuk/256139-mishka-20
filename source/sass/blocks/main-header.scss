@@ -5,7 +5,7 @@
   background-size: auto;
   background-color: $main-header;
   position: relative;
-  padding-top: 73px;
+  padding-top: 70px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 
   @media (min-resolution: 2dppx) {
@@ -52,6 +52,8 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 121px;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     font-size: 43px;
@@ -63,7 +65,7 @@
   @media (min-width: $large-width) {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 354px;
+    margin-bottom: 357px;
     padding: 0 165px;
   }
 }

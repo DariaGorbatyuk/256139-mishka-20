@@ -14,7 +14,10 @@
   margin: 0;
   margin-bottom: 27px;
   margin-left: 30px;
+  margin-right: 30px;
   position: relative;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     font-size: 43px;
@@ -70,7 +73,6 @@
   @media (min-width: $large-width) {
     grid-column: 2/span 1;
     margin: 0;
-    margin-left: 0;
     padding-right: 30px;
     padding-left: 0;
     align-self: start;
@@ -81,13 +83,12 @@
 .contacts__data-wrapper {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 100%;
   max-width: 100%;
   min-width: 0;
   word-break: break-word;
 
   &:first-of-type {
-    margin-bottom: 31px;
+    margin-bottom: 29px;
   }
 
   @media (min-width: $medium-width) {
@@ -145,23 +146,31 @@
 }
 
 .contacts__picture {
-  @media (min-width: $large-width) {
-    grid-column: 3 / -1;
-    grid-row: 1/-1;
-  }
-}
-
-.contacts__map {
-  width: 100%;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
+  position: relative;
 
   @media (min-width: $medium-width) {
     margin-bottom: 56px;
   }
 
   @media (min-width: $large-width) {
+    grid-column: 3 / -1;
+    grid-row: 1/-1;
     margin-bottom: 0;
   }
+}
+
+.contacts__map {
+  width: 100%;
+  height: 455px;
+}
+
+.contacts__yandex-map {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 455px;
 }
 
 .contacts__btn {
@@ -169,6 +178,8 @@
   font-size: 18px;
   padding-top: 14px;
   padding-bottom: 14px;
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
     width: 230px;

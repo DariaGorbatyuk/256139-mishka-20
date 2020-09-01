@@ -5,9 +5,11 @@
   padding-top: 74px;
   position: relative;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  min-width: 0;
+  word-break: break-word;
 
   @media (min-width: $medium-width) {
-    padding-top: 104px;
+    padding-top: 101px;
 
     &::after {
       @include pseudo();
