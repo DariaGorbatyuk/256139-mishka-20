@@ -60,6 +60,10 @@
 }
 
 .socials__link {
+  &:focus {
+    outline: none;
+  }
+
   &:hover .socials__svg,
   &:focus .socials__svg {
     fill: $turquoise-darker-active;
