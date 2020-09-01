@@ -24,15 +24,21 @@
   }
 }
 
+.page-footer__logo-link {
+  &:focus{
+    outline: none;
+  }
+}
+
 .page-footer__logo-img {
   fill: $basic-black;
 
-  &:hover,
-  &:focus {
+  .page-footer__logo-link:hover &,
+  .page-footer__logo-link:focus & {
     fill: $turquoise-darker-active;
   }
 
-  &:active {
+  .page-footer__logo-link:active & {
     fill: rgba($turquoise-darker-active, 0.3);
   }
 }
