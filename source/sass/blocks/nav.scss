@@ -13,6 +13,8 @@
   }
 
   &--closed {
+    padding-bottom: 0;
+
     .nav__site-list {
       display: none;
 
