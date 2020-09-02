@@ -73,8 +73,14 @@
   padding-top: 18px;
   padding-bottom: 18px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     cursor: pointer;
     background-color: $turquoise-lighter;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $turquoise-darker;
   }
 }
