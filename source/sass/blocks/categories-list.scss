@@ -13,10 +13,7 @@
   background-color: $turquoise;
   flex-basis: 100%;
   max-width: 100%;
-  padding-top: 25px;
-  padding-left: 30px;
-  padding-bottom: 30px;
-  padding-right: 113px;
+  padding: 0;
   position: relative;
 
   &::after {
@@ -103,12 +100,6 @@
   @media (min-width: $medium-width) {
     flex-basis: 50%;
     max-width: 50%;
-    padding-left: 36px;
-    padding-bottom: 34px;
-  }
-
-  @media (min-width: $large-width) {
-    padding-bottom: 34px;
   }
 }
 
@@ -121,6 +112,10 @@
   text-decoration: none;
   min-width: 0;
   word-break: break-word;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-right: 113px;
 
   &:focus {
     outline: none;
@@ -129,5 +124,11 @@
   @media (min-width: $medium-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 36px;
+    padding-bottom: 34px;
+  }
+
+  @media (min-width: $large-width) {
+    padding-bottom: 34px;
   }
 }
