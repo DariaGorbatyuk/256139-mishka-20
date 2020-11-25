@@ -81,6 +81,12 @@
   }
 }
 
+.reviews__item {
+  &--hidden {
+    display: none;
+  }
+}
+
 .reviews__blockquote {
   margin: 0;
 }
@@ -169,9 +175,13 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+    outline: none;
   }
 
   &:active {
+    opacity: 0.3;
+  }
+  &:disabled{
     opacity: 0.3;
   }
 
